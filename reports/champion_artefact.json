@@ -1,0 +1,415 @@
+{
+  "frozen_at": "2026-06-04T16:11:32",
+  "pickle_path": "artefacts\\champion.pkl",
+  "pickle_sha256": "50f1fba2a542b4799c9e064cc770a686cdaa899b6d043add1ecdcbe3127fdd50",
+  "pickle_size_bytes": 5927952,
+  "model_class": "src.models.SapStratifiedRegressor",
+  "seed": 42,
+  "fit_seconds": 46.42877745628357,
+  "train_shape": [
+    54834,
+    86
+  ],
+  "test_shape": [
+    12095,
+    86
+  ],
+  "train_report_type_counts": {
+    "100": 50821,
+    "101": 4013
+  },
+  "feature_schema": [
+    {
+      "name": "PROPERTY_TYPE",
+      "dtype": "object"
+    },
+    {
+      "name": "BUILT_FORM",
+      "dtype": "object"
+    },
+    {
+      "name": "INSPECTION_DATE",
+      "dtype": "datetime64[ns]"
+    },
+    {
+      "name": "LODGEMENT_DATE",
+      "dtype": "datetime64[ns]"
+    },
+    {
+      "name": "TRANSACTION_TYPE",
+      "dtype": "object"
+    },
+    {
+      "name": "TOTAL_FLOOR_AREA",
+      "dtype": "float64"
+    },
+    {
+      "name": "ENERGY_TARIFF",
+      "dtype": "object"
+    },
+    {
+      "name": "MAINS_GAS_FLAG",
+      "dtype": "object"
+    },
+    {
+      "name": "FLAT_TOP_STOREY",
+      "dtype": "object"
+    },
+    {
+      "name": "FLAT_STOREY_COUNT",
+      "dtype": "float64"
+    },
+    {
+      "name": "MAIN_HEATING_CONTROLS",
+      "dtype": "object"
+    },
+    {
+      "name": "MULTI_GLAZE_PROPORTION",
+      "dtype": "float64"
+    },
+    {
+      "name": "GLAZED_TYPE",
+      "dtype": "object"
+    },
+    {
+      "name": "GLAZED_AREA",
+      "dtype": "object"
+    },
+    {
+      "name": "EXTENSION_COUNT",
+      "dtype": "float64"
+    },
+    {
+      "name": "NUMBER_HABITABLE_ROOMS",
+      "dtype": "float64"
+    },
+    {
+      "name": "NUMBER_HEATED_ROOMS",
+      "dtype": "float64"
+    },
+    {
+      "name": "LOW_ENERGY_LIGHTING",
+      "dtype": "float64"
+    },
+    {
+      "name": "NUMBER_OPEN_FIREPLACES",
+      "dtype": "float64"
+    },
+    {
+      "name": "HOTWATER_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "FLOOR_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "WINDOWS_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "WALLS_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "SECONDHEAT_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "ROOF_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "MAINHEAT_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "MAINHEATCONT_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "LIGHTING_DESCRIPTION",
+      "dtype": "object"
+    },
+    {
+      "name": "MAIN_FUEL",
+      "dtype": "object"
+    },
+    {
+      "name": "WIND_TURBINE_COUNT",
+      "dtype": "float64"
+    },
+    {
+      "name": "HEAT_LOSS_CORRIDOR",
+      "dtype": "object"
+    },
+    {
+      "name": "UNHEATED_CORRIDOR_LENGTH",
+      "dtype": "float64"
+    },
+    {
+      "name": "FLOOR_HEIGHT",
+      "dtype": "float64"
+    },
+    {
+      "name": "PHOTO_SUPPLY",
+      "dtype": "float64"
+    },
+    {
+      "name": "SOLAR_WATER_HEATING_FLAG",
+      "dtype": "object"
+    },
+    {
+      "name": "MECHANICAL_VENTILATION",
+      "dtype": "object"
+    },
+    {
+      "name": "CONSTRUCTION_AGE_BAND",
+      "dtype": "object"
+    },
+    {
+      "name": "TENURE",
+      "dtype": "object"
+    },
+    {
+      "name": "FIXED_LIGHTING_OUTLETS_COUNT",
+      "dtype": "float64"
+    },
+    {
+      "name": "LOW_ENERGY_FIXED_LIGHT_COUNT",
+      "dtype": "float64"
+    },
+    {
+      "name": "REPORT_TYPE",
+      "dtype": "int64"
+    },
+    {
+      "name": "HAS_ONSITE_GENERATION",
+      "dtype": "int64"
+    },
+    {
+      "name": "INSPECTION_YEAR",
+      "dtype": "int64"
+    },
+    {
+      "name": "INSPECTION_QUARTER",
+      "dtype": "int64"
+    },
+    {
+      "name": "CONSTRUCTION_AGE_NUM",
+      "dtype": "float64"
+    },
+    {
+      "name": "FLOOR_LEVEL_NUM",
+      "dtype": "float64"
+    },
+    {
+      "name": "POSTCODE_DISTRICT",
+      "dtype": "object"
+    },
+    {
+      "name": "FLAG_CAVITY_INSULATED",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_SOLID_BRICK_BARE",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_HEAT_PUMP",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_TRIPLE_GLAZED",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_SINGLE_GLAZED",
+      "dtype": "int64"
+    },
+    {
+      "name": "LOFT_INSULATION_MM",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_LOFT_270MM",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_NO_LOFT_INSULATION",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_GAS_BOILER",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAG_ELECTRIC_HEATING",
+      "dtype": "int64"
+    },
+    {
+      "name": "LOW_ENERGY_LIGHTING_RATIO",
+      "dtype": "float64"
+    },
+    {
+      "name": "HEATED_ROOM_RATIO",
+      "dtype": "float64"
+    },
+    {
+      "name": "AREA_PER_ROOM",
+      "dtype": "float64"
+    },
+    {
+      "name": "LOG_FLOOR_AREA",
+      "dtype": "float64"
+    },
+    {
+      "name": "MAINS_GAS_FLAG_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAT_TOP_STOREY_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLAT_STOREY_COUNT_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "MAIN_HEATING_CONTROLS_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "MULTI_GLAZE_PROPORTION_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "GLAZED_TYPE_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "GLAZED_AREA_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "EXTENSION_COUNT_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "NUMBER_HABITABLE_ROOMS_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "NUMBER_HEATED_ROOMS_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "SECONDHEAT_DESCRIPTION_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "HEAT_LOSS_CORRIDOR_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "UNHEATED_CORRIDOR_LENGTH_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLOOR_HEIGHT_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "PHOTO_SUPPLY_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "SOLAR_WATER_HEATING_FLAG_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "MECHANICAL_VENTILATION_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "CONSTRUCTION_AGE_BAND_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "FIXED_LIGHTING_OUTLETS_COUNT_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "LOW_ENERGY_FIXED_LIGHT_COUNT_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "CONSTRUCTION_AGE_NUM_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "FLOOR_LEVEL_NUM_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "LOW_ENERGY_LIGHTING_RATIO_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "HEATED_ROOM_RATIO_IS_MISSING",
+      "dtype": "int64"
+    },
+    {
+      "name": "AREA_PER_ROOM_IS_MISSING",
+      "dtype": "int64"
+    }
+  ],
+  "selection_rule": {
+    "rule": "Highest temporal-holdout QWK among CV-stable candidates, ties broken by inference cost.",
+    "candidates_considered": {
+      "regression_to_band": {
+        "cv_qwk": 0.864,
+        "cv_std": 0.0006,
+        "holdout_qwk": 0.756,
+        "fit_seconds_typical": 70
+      },
+      "lgbm_expected_value": {
+        "cv_qwk": 0.8672,
+        "cv_std": 0.0022,
+        "holdout_qwk": 0.7548,
+        "fit_seconds_typical": 280
+      },
+      "ensemble_argmax": {
+        "cv_qwk": 0.861,
+        "cv_std": 0.0023,
+        "holdout_qwk": 0.752,
+        "fit_seconds_typical": 300
+      }
+    },
+    "chosen": "regression_to_band (wrapped in SapStratifiedRegressor for SAP-cohort specialisation).",
+    "rationale": "lgbm_expected_value wins CV by +0.0032 QWK but regression_to_band wins the temporal holdout even before routing (0.7560 vs 0.7548), and the hybrid SapStratifiedRegressor extends this to 0.7696. regression_to_band is also ~4x faster to fit and produces a continuous SAP-score output that supports counterfactual queries (insulation deltas, glazing changes) that the classification heads cannot express natively."
+  },
+  "holdout_overall": {
+    "n": 12095,
+    "qwk": 0.7695849172500705,
+    "bal_acc": 0.5838096667908752,
+    "macro_f1": 0.5499539280757729,
+    "acc": 0.6999586606035552
+  },
+  "holdout_per_report_type": {
+    "rt_100": {
+      "n": 10700,
+      "qwk": 0.7058958158308553,
+      "bal_acc": 0.5349855131766825,
+      "macro_f1": 0.4924673950009274,
+      "acc": 0.7037383177570093
+    },
+    "rt_101": {
+      "n": 1395,
+      "qwk": 0.5782037403411848,
+      "bal_acc": 0.3773361949430714,
+      "macro_f1": 0.2442987982498501,
+      "acc": 0.6709677419354839
+    }
+  }
+}

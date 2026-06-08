@@ -1,0 +1,145 @@
+{
+  "association_rules": {
+    "method": "Apriori (Agrawal & Srikant, 1994), min_support=0.03, ranked by lift",
+    "n_baskets": 41745,
+    "top_rules": [
+      {
+        "antecedent": "Draught proofing, Internal or external wall insulation",
+        "consequent": "Replace single glazed windows with low-E double glazed windo",
+        "support": 0.035,
+        "confidence": 0.942,
+        "lift": 8.888
+      },
+      {
+        "antecedent": "Replace single glazed windows with low-E double glazed windo",
+        "consequent": "Draught proofing, Internal or external wall insulation",
+        "support": 0.035,
+        "confidence": 0.328,
+        "lift": 8.888
+      },
+      {
+        "antecedent": "Draught proofing",
+        "consequent": "Replace single glazed windows with low-E double glazed windo",
+        "support": 0.035,
+        "confidence": 0.682,
+        "lift": 8.851
+      },
+      {
+        "antecedent": "Replace single glazed windows with low-E double glazed windo",
+        "consequent": "Draught proofing",
+        "support": 0.035,
+        "confidence": 0.452,
+        "lift": 8.851
+      },
+      {
+        "antecedent": "Draught proofing",
+        "consequent": "Internal or external wall insulation, Replace single glazed ",
+        "support": 0.035,
+        "confidence": 0.679,
+        "lift": 8.504
+      },
+      {
+        "antecedent": "Internal or external wall insulation, Replace single glazed ",
+        "consequent": "Draught proofing",
+        "support": 0.035,
+        "confidence": 0.435,
+        "lift": 8.504
+      },
+      {
+        "antecedent": "Replace single glazed windows with low-E double glazed windo",
+        "consequent": "Draught proofing, Solar photovoltaic panels",
+        "support": 0.035,
+        "confidence": 0.329,
+        "lift": 8.346
+      },
+      {
+        "antecedent": "Draught proofing, Solar photovoltaic panels",
+        "consequent": "Replace single glazed windows with low-E double glazed windo",
+        "support": 0.035,
+        "confidence": 0.884,
+        "lift": 8.346
+      },
+      {
+        "antecedent": "Draught proofing",
+        "consequent": "Replace single glazed windows with low-E double glazed windo",
+        "support": 0.044,
+        "confidence": 0.862,
+        "lift": 8.14
+      },
+      {
+        "antecedent": "Replace single glazed windows with low-E double glazed windo",
+        "consequent": "Draught proofing",
+        "support": 0.044,
+        "confidence": 0.416,
+        "lift": 8.14
+      }
+    ]
+  },
+  "content_based_knn": {
+    "method": "cosine k-NN (k=15) on leak-free fabric features, top-N=5",
+    "n_test": 2000,
+    "hit_rate": 0.971,
+    "precision_at_5": 0.521,
+    "recall_at_5": 0.761
+  },
+  "popularity_baseline": {
+    "method": "always recommend the 5 globally most-common measures",
+    "hit_rate": 0.883,
+    "precision_at_5": 0.438,
+    "recall_at_5": 0.608,
+    "knn_lift_precision_at_5": 0.083,
+    "knn_lift_recall_at_5": 0.152
+  },
+  "cost_effectiveness_top_measures": [
+    {
+      "measure": "Solar photovoltaic panels",
+      "count": 27068,
+      "median_cost_gbp": 4500
+    },
+    {
+      "measure": "Solar water heating",
+      "count": 23783,
+      "median_cost_gbp": 5000
+    },
+    {
+      "measure": "Low energy lighting for all fixed outlets",
+      "count": 15579,
+      "median_cost_gbp": 25
+    },
+    {
+      "measure": "Internal or external wall insulation",
+      "count": 12576,
+      "median_cost_gbp": 9000
+    },
+    {
+      "measure": "Floor insulation (solid floor)",
+      "count": 11283,
+      "median_cost_gbp": 5000
+    },
+    {
+      "measure": "Floor insulation (suspended floor)",
+      "count": 8813,
+      "median_cost_gbp": 1000
+    },
+    {
+      "measure": "Cavity wall insulation",
+      "count": 7828,
+      "median_cost_gbp": 1000
+    },
+    {
+      "measure": "Replace boiler with new condensing boiler",
+      "count": 7587,
+      "median_cost_gbp": 2600
+    },
+    {
+      "measure": "Increase loft insulation to 270\u00a0mm",
+      "count": 4661,
+      "median_cost_gbp": 225
+    },
+    {
+      "measure": "Replace single glazed windows with low-E double glazed ",
+      "count": 4422,
+      "median_cost_gbp": 4900
+    }
+  ]
+}

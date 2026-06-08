@@ -1,0 +1,10 @@
+# Theme for THE OXFORD ENERGY SURVEY dashboard (app.py).
+# Aligns every interactive widget accent (sliders, selected radio, multiselect
+# tags, focus rings) with the civic-editorial palette so nothing renders in
+# Streamlit's default red.
+[theme]
+primaryColor = "#B0883C"            # gilt accent — interactive highlights
+backgroundColor = "#F3EFE4"         # cream paper (CSS adds the radial wash)
+secondaryBackgroundColor = "#FBFAF4"
+textColor = "#002147"               # Oxford Blue ink
+font = "serif"

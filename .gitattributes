@@ -1,0 +1,13 @@
+# Keep data files with stable LF endings (no CRLF rewriting of large CSVs)
+*.csv text eol=lf
+*.json text eol=lf
+
+# Treat model/figure/office artefacts as binary (no diff, no EOL conversion)
+*.pkl  binary
+*.joblib binary
+*.png  binary
+*.jpg  binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.ipynb -text

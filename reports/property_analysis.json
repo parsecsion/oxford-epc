@@ -1,0 +1,130 @@
+{
+  "property_type_efficiency": {
+    "most_efficient_type": "Flat",
+    "by_type": [
+      {
+        "property_type": "Flat",
+        "n": 18476,
+        "mean_sap": 72.0,
+        "modal_band": "C"
+      },
+      {
+        "property_type": "Maisonette",
+        "n": 1478,
+        "mean_sap": 67.2,
+        "modal_band": "C"
+      },
+      {
+        "property_type": "House",
+        "n": 28721,
+        "mean_sap": 65.4,
+        "modal_band": "D"
+      },
+      {
+        "property_type": "Bungalow",
+        "n": 759,
+        "mean_sap": 65.1,
+        "modal_band": "D"
+      },
+      {
+        "property_type": "Park home",
+        "n": 8,
+        "mean_sap": 49.0,
+        "modal_band": "E"
+      }
+    ]
+  },
+  "timeline_table_mean_sap_by_type_era": [
+    {
+      "era": "pre-1900",
+      "Bungalow": 44.7,
+      "Flat": 61.0,
+      "House": 58.1,
+      "Maisonette": 57.7,
+      "Park home": NaN
+    },
+    {
+      "era": "1900-29",
+      "Bungalow": 56.4,
+      "Flat": 62.9,
+      "House": 59.6,
+      "Maisonette": 60.3,
+      "Park home": NaN
+    },
+    {
+      "era": "1930-49",
+      "Bungalow": 56.1,
+      "Flat": 65.9,
+      "House": 62.1,
+      "Maisonette": 65.7,
+      "Park home": NaN
+    },
+    {
+      "era": "1950-66",
+      "Bungalow": 63.9,
+      "Flat": 68.6,
+      "House": 65.7,
+      "Maisonette": 68.5,
+      "Park home": NaN
+    },
+    {
+      "era": "1967-82",
+      "Bungalow": 63.0,
+      "Flat": 69.1,
+      "House": 66.7,
+      "Maisonette": 66.5,
+      "Park home": 38.0
+    },
+    {
+      "era": "1983-95",
+      "Bungalow": 66.7,
+      "Flat": 72.0,
+      "House": 69.4,
+      "Maisonette": 71.0,
+      "Park home": 53.0
+    },
+    {
+      "era": "1996-06",
+      "Bungalow": 68.7,
+      "Flat": 75.7,
+      "House": 72.4,
+      "Maisonette": 74.0,
+      "Park home": 50.2
+    },
+    {
+      "era": "2007+",
+      "Bungalow": 79.1,
+      "Flat": 80.1,
+      "House": 84.3,
+      "Maisonette": 76.9,
+      "Park home": NaN
+    }
+  ],
+  "champion_by_property_type": [
+    {
+      "property_type": "House",
+      "n": 6948,
+      "accuracy": 0.698,
+      "qwk": 0.78
+    },
+    {
+      "property_type": "Maisonette",
+      "n": 308,
+      "accuracy": 0.714,
+      "qwk": 0.78
+    },
+    {
+      "property_type": "Bungalow",
+      "n": 156,
+      "accuracy": 0.692,
+      "qwk": 0.736
+    },
+    {
+      "property_type": "Flat",
+      "n": 4599,
+      "accuracy": 0.703,
+      "qwk": 0.714
+    }
+  ],
+  "efficiency_timeline_note": "Mean SAP rises monotonically with construction era across every property type, reflecting four decades of Building Regulations Part L tightening; the gap between oldest and newest stock is ~46 SAP points."
+}

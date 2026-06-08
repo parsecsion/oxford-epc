@@ -1,0 +1,292 @@
+{
+  "holdout_overall": {
+    "accuracy": 0.6792062835882596,
+    "balanced_accuracy": 0.5737681529207525,
+    "macro_f1": 0.4776743225819081,
+    "qwk": 0.7289851694523314,
+    "confusion": [
+      [
+        24,
+        205,
+        29,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        9,
+        1169,
+        264,
+        30,
+        9,
+        6,
+        1
+      ],
+      [
+        3,
+        482,
+        4367,
+        1202,
+        147,
+        17,
+        3
+      ],
+      [
+        0,
+        17,
+        496,
+        2285,
+        653,
+        45,
+        10
+      ],
+      [
+        0,
+        2,
+        16,
+        117,
+        329,
+        62,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        25,
+        21,
+        16
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        20
+      ]
+    ],
+    "per_class": {
+      "A": {
+        "precision": 0.6666666666666666,
+        "recall": 0.09195402298850575,
+        "f1-score": 0.16161616161616163,
+        "support": 261.0
+      },
+      "B": {
+        "precision": 0.6234666666666666,
+        "recall": 0.7856182795698925,
+        "f1-score": 0.6952126077906631,
+        "support": 1488.0
+      },
+      "C": {
+        "precision": 0.844354215003867,
+        "recall": 0.7019771740877673,
+        "f1-score": 0.7666110769770912,
+        "support": 6221.0
+      },
+      "D": {
+        "precision": 0.6284378437843784,
+        "recall": 0.6517398745008557,
+        "f1-score": 0.6398767852142258,
+        "support": 3506.0
+      },
+      "E": {
+        "precision": 0.28240343347639485,
+        "recall": 0.618421052631579,
+        "f1-score": 0.3877430760164997,
+        "support": 532.0
+      },
+      "F": {
+        "precision": 0.13548387096774195,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.1926605504587156,
+        "support": 63.0
+      },
+      "G": {
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.5,
+        "support": 24.0
+      },
+      "accuracy": 0.6792062835882596,
+      "macro avg": {
+        "precision": 0.5054222219583676,
+        "recall": 0.5737681529207525,
+        "f1-score": 0.4776743225819081,
+        "support": 12095.0
+      },
+      "weighted avg": {
+        "precision": 0.7213802886233093,
+        "recall": 0.6792062835882596,
+        "f1-score": 0.6878520569267931,
+        "support": 12095.0
+      }
+    }
+  },
+  "permutation_importance_top20": [
+    {
+      "feature": "CONSTRUCTION_AGE_NUM",
+      "importance_mean": 0.08625284499366712,
+      "importance_std": 0.005783188306788882
+    },
+    {
+      "feature": "WALLS_DESCRIPTION",
+      "importance_mean": 0.03082206412625743,
+      "importance_std": 0.005371979659223852
+    },
+    {
+      "feature": "ROOF_DESCRIPTION",
+      "importance_mean": 0.029671495681555894,
+      "importance_std": 0.004993703736376622
+    },
+    {
+      "feature": "BUILT_FORM",
+      "importance_mean": 0.025684211314500095,
+      "importance_std": 0.004288803975627325
+    },
+    {
+      "feature": "HOTWATER_DESCRIPTION",
+      "importance_mean": 0.024728413081455437,
+      "importance_std": 0.0024487826881803986
+    },
+    {
+      "feature": "FLAG_NO_LOFT_INSULATION",
+      "importance_mean": 0.022800387622539487,
+      "importance_std": 0.0032528424100275884
+    },
+    {
+      "feature": "FLOOR_DESCRIPTION",
+      "importance_mean": 0.01896525989376212,
+      "importance_std": 0.0037606880518910833
+    },
+    {
+      "feature": "FLAG_CAVITY_INSULATED",
+      "importance_mean": 0.018925940805375997,
+      "importance_std": 0.004338697068164403
+    },
+    {
+      "feature": "WINDOWS_DESCRIPTION",
+      "importance_mean": 0.011863301676272319,
+      "importance_std": 0.0026037755132636317
+    },
+    {
+      "feature": "SECONDHEAT_DESCRIPTION_IS_MISSING",
+      "importance_mean": 0.011598592441208755,
+      "importance_std": 0.0022257771441170603
+    },
+    {
+      "feature": "MAINHEATCONT_DESCRIPTION",
+      "importance_mean": 0.011407032381493386,
+      "importance_std": 0.0037463245103757773
+    },
+    {
+      "feature": "TOTAL_FLOOR_AREA",
+      "importance_mean": 0.008139504600570136,
+      "importance_std": 0.004156583915533459
+    },
+    {
+      "feature": "PHOTO_SUPPLY",
+      "importance_mean": 0.007958509181448203,
+      "importance_std": 0.0010918642021770742
+    },
+    {
+      "feature": "ENERGY_TARIFF",
+      "importance_mean": 0.006490905847776562,
+      "importance_std": 0.0021270498640138546
+    },
+    {
+      "feature": "FLAG_SOLID_BRICK_BARE",
+      "importance_mean": 0.0062399076102875204,
+      "importance_std": 0.002570096956320748
+    },
+    {
+      "feature": "MAINHEAT_DESCRIPTION",
+      "importance_mean": 0.005430875022220327,
+      "importance_std": 0.0050586566448265905
+    },
+    {
+      "feature": "MAIN_FUEL",
+      "importance_mean": 0.004256436412814479,
+      "importance_std": 0.0017273382250158396
+    },
+    {
+      "feature": "NUMBER_HABITABLE_ROOMS",
+      "importance_mean": 0.004064585471731408,
+      "importance_std": 0.0022543240008499007
+    },
+    {
+      "feature": "LOFT_INSULATION_MM",
+      "importance_mean": 0.003970237939562438,
+      "importance_std": 0.0033546001040112698
+    },
+    {
+      "feature": "LOG_FLOOR_AREA",
+      "importance_mean": 0.0037824818912374656,
+      "importance_std": 0.00255073722369728
+    }
+  ],
+  "report_type_stratified": {
+    "100": {
+      "n": 10700,
+      "qwk": 0.6566068807503669,
+      "bal_acc": 0.5339553050228266,
+      "macro_f1": 0.43163917916844324,
+      "acc": 0.677196261682243
+    },
+    "101": {
+      "n": 1395,
+      "qwk": 0.4818265379072433,
+      "bal_acc": 0.3450339402242024,
+      "macro_f1": 0.22967158582804276,
+      "acc": 0.6946236559139785
+    }
+  },
+  "per_class_f1_bootstrap_ci": {
+    "A": {
+      "mean": 0.16016856109419,
+      "ci_low_2.5": 0.10407131011608624,
+      "ci_high_97.5": 0.217841844242193,
+      "ci_width": 0.11377053412610676
+    },
+    "B": {
+      "mean": 0.6948530709258172,
+      "ci_low_2.5": 0.6762800346711648,
+      "ci_high_97.5": 0.7123913156978768,
+      "ci_width": 0.03611128102671202
+    },
+    "C": {
+      "mean": 0.7666106084530415,
+      "ci_low_2.5": 0.7584893957743505,
+      "ci_high_97.5": 0.7749432172954529,
+      "ci_width": 0.01645382152110242
+    },
+    "D": {
+      "mean": 0.6402103648111879,
+      "ci_low_2.5": 0.6273554564388005,
+      "ci_high_97.5": 0.6523857403348712,
+      "ci_width": 0.02503028389607065
+    },
+    "E": {
+      "mean": 0.3884796526720576,
+      "ci_low_2.5": 0.36051700218012966,
+      "ci_high_97.5": 0.41495871655518396,
+      "ci_width": 0.054441714375054295
+    },
+    "F": {
+      "mean": 0.19087244096860195,
+      "ci_low_2.5": 0.12232993197278912,
+      "ci_high_97.5": 0.26756597207837934,
+      "ci_width": 0.14523604010559021
+    },
+    "G": {
+      "mean": 0.49266979153293494,
+      "ci_low_2.5": 0.35713555510120626,
+      "ci_high_97.5": 0.6214942528735632,
+      "ci_width": 0.26435869777235693
+    }
+  }
+}

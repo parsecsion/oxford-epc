@@ -1,0 +1,6 @@
+rule,n_rows_affected,action
+heated > habitable,2,clip heated to habitable
+NUMBER_HEATED_ROOMS == 0,156,set NaN (impossible value)
+TOTAL_FLOOR_AREA == 0,75,set NaN (impossible value)
+negative emissions/consumption,185,added HAS_ONSITE_GENERATION=1
+habitable_rooms > 30 (HMO),6,kept; tracked only

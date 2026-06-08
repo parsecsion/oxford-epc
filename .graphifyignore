@@ -1,0 +1,29 @@
+# Scope the knowledge graph to OUR source code + documentation.
+# These are excluded from the graph only (still tracked in git as deliverables).
+
+# tool internals / generated graph
+.graphify-venv/
+graphify-out/
+.graphify/
+
+# generated artefacts, figures and data — outputs, not code structure
+reports/
+data/
+*.csv
+*.pkl
+*.png
+*.docx
+*.pptx
+*.xlsx
+
+# the friend's separate Liverpool project (not part of this codebase)
+DataScience/
+
+# notebooks/checkpoints render as one giant JSON node — keep the graph on src/
+.ipynb_checkpoints/
+*.ipynb
+__pycache__/
+
+# stray virtualenvs
+.venv-tensorflow/
+*venv*/

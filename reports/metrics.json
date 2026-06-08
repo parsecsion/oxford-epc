@@ -1,0 +1,738 @@
+{
+  "_seed": 42,
+  "n_raw_certificates": 76430,
+  "n_raw_columns": 93,
+  "n_clean": 49442,
+  "n_clean_columns": 92,
+  "rating_distribution": {
+    "A": 409,
+    "B": 4644,
+    "C": 22179,
+    "D": 16807,
+    "E": 4614,
+    "F": 632,
+    "G": 157
+  },
+  "top_missing": {
+    "FLAT_STOREY_COUNT": 95.76,
+    "FLOOR_ENERGY_EFF": 94.45,
+    "FLOOR_ENV_EFF": 94.45,
+    "ADDRESS3": 89.18,
+    "LOW_ENERGY_FIXED_LIGHT_COUNT": 82.25,
+    "UNHEATED_CORRIDOR_LENGTH": 81.77,
+    "SECONDHEAT_DESCRIPTION": 73.29,
+    "HEAT_LOSS_CORRIDOR": 65.41,
+    "FLAT_TOP_STOREY": 60.53,
+    "FLOOR_LEVEL": 59.55,
+    "MAIN_HEATING_CONTROLS": 51.04,
+    "ADDRESS2": 46.74,
+    "PHOTO_SUPPLY": 43.05,
+    "FLOOR_HEIGHT": 42.36,
+    "FIXED_LIGHTING_OUTLETS_COUNT": 39.42,
+    "ROOF_ENV_EFF": 23.65,
+    "ROOF_ENERGY_EFF": 23.65,
+    "GLAZED_TYPE": 19.83,
+    "SOLAR_WATER_HEATING_FLAG": 19.31,
+    "GLAZED_AREA": 14.51
+  },
+  "inspections_by_year": {
+    "2007": 3,
+    "2008": 478,
+    "2009": 1408,
+    "2010": 1145,
+    "2011": 1053,
+    "2012": 1344,
+    "2013": 1433,
+    "2014": 2040,
+    "2015": 1948,
+    "2016": 1900,
+    "2017": 2597,
+    "2018": 4391,
+    "2019": 4108,
+    "2020": 4158,
+    "2021": 4644,
+    "2022": 4697,
+    "2023": 3934,
+    "2024": 3607,
+    "2025": 3720,
+    "2026": 834
+  },
+  "property_built_form_xtab": {
+    "Detached": {
+      "Bungalow": 316,
+      "Flat": 2039,
+      "House": 2834,
+      "Maisonette": 105,
+      "Park home": 8
+    },
+    "Enclosed End-Terrace": {
+      "Bungalow": 7,
+      "Flat": 835,
+      "House": 37,
+      "Maisonette": 23,
+      "Park home": 0
+    },
+    "Enclosed Mid-Terrace": {
+      "Bungalow": 0,
+      "Flat": 584,
+      "House": 38,
+      "Maisonette": 16,
+      "Park home": 0
+    },
+    "End-Terrace": {
+      "Bungalow": 125,
+      "Flat": 3118,
+      "House": 4892,
+      "Maisonette": 273,
+      "Park home": 0
+    },
+    "Mid-Terrace": {
+      "Bungalow": 139,
+      "Flat": 5023,
+      "House": 10285,
+      "Maisonette": 617,
+      "Park home": 0
+    },
+    "Not Recorded": {
+      "Bungalow": 0,
+      "Flat": 585,
+      "House": 0,
+      "Maisonette": 62,
+      "Park home": 0
+    },
+    "Semi-Detached": {
+      "Bungalow": 172,
+      "Flat": 5756,
+      "House": 10621,
+      "Maisonette": 351,
+      "Park home": 0
+    }
+  },
+  "feature_flag_summary": {
+    "mean": {
+      "FLAG_CAVITY_INSULATED": 0.3773,
+      "FLAG_SOLID_BRICK_BARE": 0.2553,
+      "FLAG_HEAT_PUMP": 0.0173,
+      "FLAG_TRIPLE_GLAZED": 0.0028,
+      "FLAG_SINGLE_GLAZED": 0.0442,
+      "LOFT_INSULATION_MM": 80.2914,
+      "FLAG_LOFT_270MM": 0.0743,
+      "FLAG_NO_LOFT_INSULATION": 0.1002,
+      "FLAG_GAS_BOILER": 0.7956,
+      "FLAG_ELECTRIC_HEATING": 0.1557
+    },
+    "nonzero_share": {
+      "FLAG_CAVITY_INSULATED": 0.3773,
+      "FLAG_SOLID_BRICK_BARE": 0.2553,
+      "FLAG_HEAT_PUMP": 0.0173,
+      "FLAG_TRIPLE_GLAZED": 0.0028,
+      "FLAG_SINGLE_GLAZED": 0.0442,
+      "LOFT_INSULATION_MM": 0.4674,
+      "FLAG_LOFT_270MM": 0.0743,
+      "FLAG_NO_LOFT_INSULATION": 0.1002,
+      "FLAG_GAS_BOILER": 0.7956,
+      "FLAG_ELECTRIC_HEATING": 0.1557
+    }
+  },
+  "walls_sap_median_by_type": {
+    "Sandstone or limestone, as built, no insulation (assumed)": 60.0,
+    "Solid brick, as built, no insulation (assumed)": 61.0,
+    "Cavity wall, as built, no insulation (assumed)": 64.0,
+    "System built, as built, no insulation (assumed)": 65.0,
+    "Cavity wall, as built, partial insulation (assumed)": 70.0,
+    "Cavity wall, filled cavity": 71.0,
+    "Timber frame, as built, partial insulation (assumed)": 71.0,
+    "System built, with external insulation": 72.0,
+    "System built, with internal insulation": 72.0,
+    "Solid brick, with external insulation": 72.0,
+    "Solid brick, with internal insulation": 73.0,
+    "Cavity wall, as built, insulated (assumed)": 74.0,
+    "Timber frame, as built, insulated (assumed)": 76.0,
+    "System built, as built, insulated (assumed)": 80.0,
+    "Average thermal transmittance 0.22 W/m-\u00a6K": 84.0,
+    "Average thermal transmittance 0.20 W/m-\u00a6K": 84.0,
+    "Average thermal transmittance 0.21 W/m-\u00a6K": 85.0,
+    "Average thermal transmittance 0.15 W/m-\u00a6K": 85.0,
+    "Average thermal transmittance 0.25 W/m-\u00a6K": 85.0
+  },
+  "walls_sap_gap_top_vs_bottom": 25.0,
+  "diagnostic": {
+    "spearman_age_sap": 0.6182777562218816,
+    "spearman_glaze_sap": 0.20906075528412046,
+    "spearman_loft_sap": -0.12778151385351638,
+    "cramers_v": {
+      "walls": 0.40745222691001326,
+      "main_fuel": 0.3181938489869221,
+      "age_band": 0.3658675074135159,
+      "built_form": 0.09051391372577852,
+      "roof": 0.37568335086490345,
+      "floor": 0.3441619239725989
+    }
+  },
+  "n_train": 37347,
+  "n_test": 12095,
+  "n_features_model": 81,
+  "cv_qwk": {
+    "dummy_stratified": {
+      "mean": 0.012575340734735452,
+      "std": 0.007072818460115104
+    },
+    "logistic": {
+      "mean": 0.7652807273868987,
+      "std": 0.00396953030354278
+    },
+    "random_forest": {
+      "mean": 0.8300956712765839,
+      "std": 0.004867297444724142
+    },
+    "xgboost": {
+      "mean": 0.8479165650849382,
+      "std": 0.002140317746989272
+    },
+    "lightgbm": {
+      "mean": 0.846509130037294,
+      "std": 0.002900006795635876
+    },
+    "lightgbm_balanced": {
+      "mean": 0.8514714288270163,
+      "std": 0.003012156964449295
+    }
+  },
+  "optuna_best_cv_qwk_3fold": 0.8452936496123112,
+  "optuna_best_params": {
+    "n_estimators": 427,
+    "learning_rate": 0.040300970604102884,
+    "num_leaves": 60,
+    "min_child_samples": 36,
+    "subsample": 0.8295835055926347,
+    "colsample_bytree": 0.7873687420594125,
+    "reg_lambda": 0.18332660870188128
+  },
+  "optuna_n_trials_completed": 10,
+  "lightgbm_tuned_cv_qwk_5fold": 0.8489615747893134,
+  "champion_kind": "tuned",
+  "holdout_classification": {
+    "accuracy": 0.7417114510128152,
+    "balanced_accuracy": 0.4816913164973826,
+    "macro_f1": 0.5347707645637062,
+    "qwk": 0.7510359922500465,
+    "confusion": [
+      [
+        40,
+        168,
+        52,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        802,
+        654,
+        10,
+        4,
+        1,
+        0
+      ],
+      [
+        3,
+        116,
+        5329,
+        708,
+        58,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        798,
+        2531,
+        176,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        28,
+        250,
+        247,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        42,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        5,
+        11
+      ]
+    ],
+    "per_class": {
+      "A": {
+        "precision": 0.6349206349206349,
+        "recall": 0.1532567049808429,
+        "f1-score": 0.24691358024691357,
+        "support": 261.0
+      },
+      "B": {
+        "precision": 0.736455463728191,
+        "recall": 0.538255033557047,
+        "f1-score": 0.6219464908879411,
+        "support": 1490.0
+      },
+      "C": {
+        "precision": 0.7767089345576447,
+        "recall": 0.857579658834889,
+        "f1-score": 0.8151434034416826,
+        "support": 6214.0
+      },
+      "D": {
+        "precision": 0.7214937286202965,
+        "recall": 0.7206719817767654,
+        "f1-score": 0.7210826210826211,
+        "support": 3512.0
+      },
+      "E": {
+        "precision": 0.4616822429906542,
+        "recall": 0.4634146341463415,
+        "f1-score": 0.46254681647940077,
+        "support": 533.0
+      },
+      "F": {
+        "precision": 0.39285714285714285,
+        "recall": 0.18032786885245902,
+        "f1-score": 0.24719101123595505,
+        "support": 61.0
+      },
+      "G": {
+        "precision": 1.0,
+        "recall": 0.4583333333333333,
+        "f1-score": 0.6285714285714286,
+        "support": 24.0
+      },
+      "accuracy": 0.7417114510128152,
+      "macro avg": {
+        "precision": 0.6748740210963662,
+        "recall": 0.4816913164973826,
+        "f1-score": 0.5347707645637062,
+        "support": 12095.0
+      },
+      "weighted avg": {
+        "precision": 0.7372822771519868,
+        "recall": 0.7417114510128152,
+        "f1-score": 0.7329962636834134,
+        "support": 12095.0
+      }
+    }
+  },
+  "holdout_regression": {
+    "mae": 3.356701135635376,
+    "rmse": 4.971342741878352,
+    "r2": 0.7621957063674927
+  },
+  "permutation_importance_top20": {
+    "FLOOR_DESCRIPTION": 0.04358,
+    "CONSTRUCTION_AGE_NUM": 0.04217,
+    "WALLS_DESCRIPTION": 0.04192,
+    "ROOF_DESCRIPTION": 0.03983,
+    "BUILT_FORM": 0.02925,
+    "HOTWATER_DESCRIPTION": 0.02742,
+    "FLAG_NO_LOFT_INSULATION": 0.02275,
+    "FLAG_CAVITY_INSULATED": 0.02067,
+    "SECONDHEAT_DESCRIPTION_IS_MISSING": 0.01967,
+    "MAINHEATCONT_DESCRIPTION": 0.01742,
+    "WINDOWS_DESCRIPTION": 0.01058,
+    "TOTAL_FLOOR_AREA": 0.00942,
+    "MAINHEAT_DESCRIPTION": 0.00675,
+    "LOW_ENERGY_LIGHTING": 0.00617,
+    "LOFT_INSULATION_MM": 0.00575,
+    "NUMBER_OPEN_FIREPLACES": 0.00567,
+    "MULTI_GLAZE_PROPORTION": 0.00567,
+    "FLAG_SOLID_BRICK_BARE": 0.00533,
+    "PHOTO_SUPPLY": 0.00442,
+    "PROPERTY_TYPE": 0.00442
+  },
+  "calibration_C_brier_before": 0.14250797220675013,
+  "calibration_C_brier_after_isotonic": 0.16925439280237503,
+  "fairness": [
+    {
+      "segment": "TENURE",
+      "value": "Not defined - use in the case of a new dwelling for which the intended tenure in not known. It is not to be used for an existing dwelling",
+      "n": 1291,
+      "balanced_accuracy": 0.4920955771735122,
+      "macro_f1": 0.42207259075770287,
+      "qwk": 0.5735197714009592
+    },
+    {
+      "segment": "TENURE",
+      "value": "Owner-occupied",
+      "n": 4774,
+      "balanced_accuracy": 0.5423998244181873,
+      "macro_f1": 0.599731519236132,
+      "qwk": 0.7744849288203637
+    },
+    {
+      "segment": "TENURE",
+      "value": "Rented (private)",
+      "n": 3889,
+      "balanced_accuracy": 0.3684322782764585,
+      "macro_f1": 0.4001646584181979,
+      "qwk": 0.6282707181164214
+    },
+    {
+      "segment": "TENURE",
+      "value": "Rented (social)",
+      "n": 2141,
+      "balanced_accuracy": 0.3761345325147603,
+      "macro_f1": 0.4084229695682559,
+      "qwk": 0.6535466487546847
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "2022",
+      "n": 384,
+      "balanced_accuracy": 0.45527005006558907,
+      "macro_f1": 0.19133600972029077,
+      "qwk": 0.2244703117541219
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "2023",
+      "n": 330,
+      "balanced_accuracy": 0.2768736797634136,
+      "macro_f1": 0.14645103324348607,
+      "qwk": 0.27085251334929106
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "2024",
+      "n": 219,
+      "balanced_accuracy": 0.45422836966954616,
+      "macro_f1": 0.12489464558430075,
+      "qwk": 0.09548104956268222
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1900-1929",
+      "n": 1727,
+      "balanced_accuracy": 0.4064928284110311,
+      "macro_f1": 0.433744708023441,
+      "qwk": 0.6287387507628546
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1930-1949",
+      "n": 1794,
+      "balanced_accuracy": 0.4082749176094979,
+      "macro_f1": 0.45526098197151627,
+      "qwk": 0.6508247403671021
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1950-1966",
+      "n": 1814,
+      "balanced_accuracy": 0.27089551830367903,
+      "macro_f1": 0.27962046802086943,
+      "qwk": 0.6012408146740648
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1967-1975",
+      "n": 946,
+      "balanced_accuracy": 0.4725625491699363,
+      "macro_f1": 0.48032212503753424,
+      "qwk": 0.6677397865683752
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1976-1982",
+      "n": 622,
+      "balanced_accuracy": 0.3296047315834335,
+      "macro_f1": 0.3100236025089636,
+      "qwk": 0.6440732098973535
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1983-1990",
+      "n": 614,
+      "balanced_accuracy": 0.5012757812547434,
+      "macro_f1": 0.3182142074094204,
+      "qwk": 0.5931998543866036
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1991-1995",
+      "n": 488,
+      "balanced_accuracy": 0.41706942272387293,
+      "macro_f1": 0.3297840972895317,
+      "qwk": 0.456403165091803
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 1996-2002",
+      "n": 751,
+      "balanced_accuracy": 0.44625211985714974,
+      "macro_f1": 0.34187628019152694,
+      "qwk": 0.5990558304362266
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 2003-2006",
+      "n": 498,
+      "balanced_accuracy": 0.49946581196581197,
+      "macro_f1": 0.3072055372297503,
+      "qwk": 0.6032845149825357
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 2007-2011",
+      "n": 315,
+      "balanced_accuracy": 0.3782775563177899,
+      "macro_f1": 0.26821880650994573,
+      "qwk": 0.528995756718529
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: 2012 onwards",
+      "n": 440,
+      "balanced_accuracy": 0.5112445230872935,
+      "macro_f1": 0.2716257547166225,
+      "qwk": 0.4262583597324886
+    },
+    {
+      "segment": "CONSTRUCTION_AGE_BAND",
+      "value": "England and Wales: before 1900",
+      "n": 742,
+      "balanced_accuracy": 0.43103136514579443,
+      "macro_f1": 0.38890411878644304,
+      "qwk": 0.6604791082822717
+    },
+    {
+      "segment": "PROPERTY_TYPE",
+      "value": "Bungalow",
+      "n": 158,
+      "balanced_accuracy": 0.5258169250104734,
+      "macro_f1": 0.4702197288452548,
+      "qwk": 0.6975631303835677
+    },
+    {
+      "segment": "PROPERTY_TYPE",
+      "value": "Flat",
+      "n": 4623,
+      "balanced_accuracy": 0.3766863408588767,
+      "macro_f1": 0.40810531980448417,
+      "qwk": 0.6512159755157223
+    },
+    {
+      "segment": "PROPERTY_TYPE",
+      "value": "House",
+      "n": 7003,
+      "balanced_accuracy": 0.5189907830857872,
+      "macro_f1": 0.5673569775509698,
+      "qwk": 0.7868994019128477
+    },
+    {
+      "segment": "PROPERTY_TYPE",
+      "value": "Maisonette",
+      "n": 310,
+      "balanced_accuracy": 0.4293965353355402,
+      "macro_f1": 0.44561756182882817,
+      "qwk": 0.730735516774245
+    }
+  ],
+  "holdout_by_report_type": {
+    "RdSAP (existing)": {
+      "n": 10704,
+      "qwk": 0.6976300973403289,
+      "macro_f1": 0.47723428459145606,
+      "balanced_accuracy": 0.43029378349504604
+    },
+    "SAP (new dwelling)": {
+      "n": 1391,
+      "qwk": 0.44847021742185456,
+      "macro_f1": 0.24196837378165512,
+      "balanced_accuracy": 0.35741380615742707
+    }
+  },
+  "recommendations": {
+    "top_5_measures": [
+      {
+        "measure": "Solar photovoltaic panels, 2.5 kWp",
+        "count": 27068,
+        "cost_mid_mean": 6432.553748940433
+      },
+      {
+        "measure": "Solar water heating",
+        "count": 23783,
+        "cost_mid_mean": 5002.8876036665215
+      },
+      {
+        "measure": "Low energy lighting for all fixed outlets",
+        "count": 15579,
+        "cost_mid_mean": 39.3872010567297
+      },
+      {
+        "measure": "Internal or external wall insulation",
+        "count": 12576,
+        "cost_mid_mean": 9034.47416514371
+      },
+      {
+        "measure": "Floor insulation (solid floor)",
+        "count": 11283,
+        "cost_mid_mean": 5164.185057165648
+      }
+    ],
+    "avg_n_per_dwelling": 3.616830424228413,
+    "avg_total_cost_per_dwelling": 12464.678025661773,
+    "median_total_cost_per_dwelling": 12500.0
+  },
+  "holdout_ordinal_nn": {
+    "accuracy": 0.7152542372881356,
+    "balanced_accuracy": 0.41333288960613196,
+    "macro_f1": 0.460656442894829,
+    "qwk": 0.7293876162749887,
+    "confusion": [
+      [
+        50,
+        173,
+        37,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        96,
+        823,
+        550,
+        17,
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        148,
+        5299,
+        741,
+        22,
+        1,
+        0
+      ],
+      [
+        1,
+        5,
+        1103,
+        2299,
+        104,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        44,
+        319,
+        166,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        13,
+        37,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        5,
+        13,
+        4
+      ]
+    ],
+    "per_class": {
+      "A": {
+        "precision": 0.3333333333333333,
+        "recall": 0.19157088122605365,
+        "f1-score": 0.24330900243309003,
+        "support": 261.0
+      },
+      "B": {
+        "precision": 0.7162750217580505,
+        "recall": 0.5523489932885906,
+        "f1-score": 0.6237211064797271,
+        "support": 1490.0
+      },
+      "C": {
+        "precision": 0.7533409155530282,
+        "recall": 0.8527518506598004,
+        "f1-score": 0.799969806763285,
+        "support": 6214.0
+      },
+      "D": {
+        "precision": 0.6777712264150944,
+        "recall": 0.6546127562642369,
+        "f1-score": 0.6659907300115875,
+        "support": 3512.0
+      },
+      "E": {
+        "precision": 0.4911242603550296,
+        "recall": 0.31144465290806755,
+        "f1-score": 0.3811710677382319,
+        "support": 533.0
+      },
+      "F": {
+        "precision": 0.35714285714285715,
+        "recall": 0.16393442622950818,
+        "f1-score": 0.2247191011235955,
+        "support": 61.0
+      },
+      "G": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1-score": 0.2857142857142857,
+        "support": 24.0
+      },
+      "accuracy": 0.7152542372881356,
+      "macro avg": {
+        "precision": 0.6184268020796276,
+        "recall": 0.41333288960613196,
+        "f1-score": 0.460656442894829,
+        "support": 12095.0
+      },
+      "weighted avg": {
+        "precision": 0.7047042351294558,
+        "recall": 0.7152542372881356,
+        "f1-score": 0.704964787800557,
+        "support": 12095.0
+      }
+    }
+  },
+  "corn_nn_holdout": {
+    "n": 12095,
+    "qwk": 0.6588464164503425,
+    "accuracy": 0.6331541959487391,
+    "balanced_accuracy": 0.3573306575292948,
+    "macro_f1": 0.3569768297997918
+  }
+}

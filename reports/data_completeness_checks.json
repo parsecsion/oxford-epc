@@ -1,0 +1,158 @@
+{
+  "raw_file_hash": "0bca4cc9f80742f6",
+  "clean_csv_hash": "aebc0033835e458e",
+  "raw_shape": [
+    76430,
+    93
+  ],
+  "clean_shape": [
+    49442,
+    92
+  ],
+  "published_shape": [
+    49442,
+    77
+  ],
+  "model_matrix_shape": [
+    49442,
+    83
+  ],
+  "flat_split": {
+    "train": 37347,
+    "test": 12095
+  },
+  "group_split": {
+    "train": 37347,
+    "test": 12095
+  },
+  "checks_total": 25,
+  "checks_passed": 25,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "raw_certificates_loadable",
+      "status": "PASS",
+      "detail": "loaded 76430 raw rows from certificates.csv"
+    },
+    {
+      "check": "oxford_local_authority_filtered",
+      "status": "PASS",
+      "detail": "all rows belong to Oxford LA"
+    },
+    {
+      "check": "quality_report_exists",
+      "status": "PASS",
+      "detail": "audit trail at reports\\data_quality_report.csv"
+    },
+    {
+      "check": "quality_report_records_changes",
+      "status": "PASS",
+      "detail": "5 cleaning rules recorded"
+    },
+    {
+      "check": "no_heated_exceeds_habitable",
+      "status": "PASS",
+      "detail": "0 rows where heated > habitable"
+    },
+    {
+      "check": "no_zero_rooms",
+      "status": "PASS",
+      "detail": "0 rows with zero rooms"
+    },
+    {
+      "check": "no_zero_floor_area",
+      "status": "PASS",
+      "detail": "0 rows with zero floor area"
+    },
+    {
+      "check": "has_onsite_generation_flag",
+      "status": "PASS",
+      "detail": "167 PV-generating dwellings flagged"
+    },
+    {
+      "check": "uprn_deduplicated",
+      "status": "PASS",
+      "detail": "0 duplicate UPRNs survived"
+    },
+    {
+      "check": "lmk_key_unique",
+      "status": "PASS",
+      "detail": "0 duplicate LMK_KEYs survived"
+    },
+    {
+      "check": "no_pii_in_published_csv",
+      "status": "PASS",
+      "detail": "PII columns present: none"
+    },
+    {
+      "check": "no_admin_in_published_csv",
+      "status": "PASS",
+      "detail": "admin columns present: none"
+    },
+    {
+      "check": "target_values_valid",
+      "status": "PASS",
+      "detail": "target values: ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
+    },
+    {
+      "check": "no_null_target",
+      "status": "PASS",
+      "detail": "null targets: 0"
+    },
+    {
+      "check": "no_leakage_in_model_matrix",
+      "status": "PASS",
+      "detail": "leakage cols in X: none"
+    },
+    {
+      "check": "no_element_eff_in_model_matrix",
+      "status": "PASS",
+      "detail": "element-eff cols in X: none"
+    },
+    {
+      "check": "flat_split_temporal_clean",
+      "status": "PASS",
+      "detail": "flat: 0 train post-cutoff, 0 test pre-cutoff"
+    },
+    {
+      "check": "group_split_temporal_clean",
+      "status": "PASS",
+      "detail": "group: 0 train post-cutoff, 0 test pre-cutoff"
+    },
+    {
+      "check": "group_split_no_uprn_leakage",
+      "status": "PASS",
+      "detail": "0 UPRNs in both train and test"
+    },
+    {
+      "check": "engineered_flags_present",
+      "status": "PASS",
+      "detail": "9 FLAG_* columns: ['FLAG_CAVITY_INSULATED', 'FLAG_SOLID_BRICK_BARE', 'FLAG_HEAT_PUMP', 'FLAG_TRIPLE_GLAZED', 'FLAG_SINGLE_GLAZED', 'FLAG_LOFT_270MM', 'FLAG_NO_LOFT_INSULATION', 'FLAG_GAS_BOILER', 'FLAG_ELECTRIC_HEATING']"
+    },
+    {
+      "check": "construction_age_engineered",
+      "status": "PASS",
+      "detail": "CONSTRUCTION_AGE_NUM present, 47237 populated"
+    },
+    {
+      "check": "postcode_district_non_pii",
+      "status": "PASS",
+      "detail": "POSTCODE_DISTRICT (outward code only, not full postcode)"
+    },
+    {
+      "check": "reproducible_shape",
+      "status": "PASS",
+      "detail": "first run: (49442, 92), second run: (49442, 92)"
+    },
+    {
+      "check": "reproducible_content",
+      "status": "PASS",
+      "detail": "deterministic across 4 core columns"
+    },
+    {
+      "check": "data_pipeline_documented",
+      "status": "PASS",
+      "detail": "DATA_PIPELINE.md present"
+    }
+  ]
+}

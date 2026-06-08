@@ -1,0 +1,357 @@
+{
+  "checks_total": 70,
+  "checks_passed": 70,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "artefact_cv_compare_exists",
+      "status": "PASS",
+      "detail": "reports/cv_compare.json present"
+    },
+    {
+      "check": "artefact_cv_groupkfold_exists",
+      "status": "PASS",
+      "detail": "reports/cv_groupkfold.json present"
+    },
+    {
+      "check": "artefact_cv_champions_exists",
+      "status": "PASS",
+      "detail": "reports/cv_champions.json present"
+    },
+    {
+      "check": "artefact_model_panel_exists",
+      "status": "PASS",
+      "detail": "reports/model_panel.json present"
+    },
+    {
+      "check": "artefact_sap_stratified_exists",
+      "status": "PASS",
+      "detail": "reports/sap_stratified.json present"
+    },
+    {
+      "check": "artefact_diagnostics_exists",
+      "status": "PASS",
+      "detail": "reports/diagnostics.json present"
+    },
+    {
+      "check": "artefact_tune_histgb_exists",
+      "status": "PASS",
+      "detail": "reports/tune_histgb.json present"
+    },
+    {
+      "check": "artefact_ablation_study_exists",
+      "status": "PASS",
+      "detail": "reports/ablation_study.json present"
+    },
+    {
+      "check": "at_least_three_baselines",
+      "status": "PASS",
+      "detail": "baselines: ['1a_dummy_stratified', '1b_dummy_most_frequent', '1c_age_only_lr', '1d_full_logreg']"
+    },
+    {
+      "check": "stratified_dummy_qwk_near_zero",
+      "status": "PASS",
+      "detail": "dummy QWK = 0.0029"
+    },
+    {
+      "check": "logreg_baseline_present",
+      "status": "PASS",
+      "detail": "LogReg baseline QWK = 0.4327"
+    },
+    {
+      "check": "regression_to_band_in_models",
+      "status": "PASS",
+      "detail": "regression_to_band_estimator is callable"
+    },
+    {
+      "check": "sap_score_to_band_in_models",
+      "status": "PASS",
+      "detail": "sap_score_to_band is callable"
+    },
+    {
+      "check": "sap_stratified_class_present",
+      "status": "PASS",
+      "detail": "SapStratifiedRegressor class importable"
+    },
+    {
+      "check": "champion_api_surface",
+      "status": "PASS",
+      "detail": "fit, predict_score, predict_band methods present on SapStratifiedRegressor"
+    },
+    {
+      "check": "score_to_band_roundtrip",
+      "status": "PASS",
+      "detail": "sample mapping matches DLUHC thresholds"
+    },
+    {
+      "check": "sap_lift_matches_docstring_claim",
+      "status": "PASS",
+      "detail": "recorded full-stratification SAP lift = +0.0609 (docstring claims +0.0609)"
+    },
+    {
+      "check": "regression_target_not_in_features",
+      "status": "PASS",
+      "detail": "CURRENT_ENERGY_EFFICIENCY in X: False (correct)"
+    },
+    {
+      "check": "no_other_leakage_cols_in_X",
+      "status": "PASS",
+      "detail": "all LEAKAGE_COLS dropped from feature matrix"
+    },
+    {
+      "check": "band_mapping_matches_dluhc",
+      "status": "PASS",
+      "detail": "score->band match rate = 100.00%"
+    },
+    {
+      "check": "group_split_no_uprn_overlap",
+      "status": "PASS",
+      "detail": "UPRN overlap = 0"
+    },
+    {
+      "check": "regression_cv_qwk_above_0_85",
+      "status": "PASS",
+      "detail": "regression-to-band CV QWK = 0.8640 +/- 0.0006"
+    },
+    {
+      "check": "regression_cv_std_tight",
+      "status": "PASS",
+      "detail": "CV std = 0.0006 (should be < 0.01)"
+    },
+    {
+      "check": "sap_cohort_improved",
+      "status": "PASS",
+      "detail": "SAP QWK lift from full stratification: +0.0609"
+    },
+    {
+      "check": "hybrid_strategy_documented",
+      "status": "PASS",
+      "detail": "SapStratifiedRegressor class documents the hybrid approach"
+    },
+    {
+      "check": "permutation_importance_csv",
+      "status": "PASS",
+      "detail": "reports\\permutation_importance.csv present"
+    },
+    {
+      "check": "per_class_f1_bootstrap_ci",
+      "status": "PASS",
+      "detail": "bootstrap CIs present in diagnostics.json"
+    },
+    {
+      "check": "report_type_stratified_eval",
+      "status": "PASS",
+      "detail": "REPORT_TYPE-stratified evaluation present"
+    },
+    {
+      "check": "hybrid_section_present_in_artefact",
+      "status": "PASS",
+      "detail": "sap_stratified.json contains a '3_hybrid' section (the SapStratifiedRegressor configuration)"
+    },
+    {
+      "check": "hybrid_overall_not_worse_than_unified",
+      "status": "PASS",
+      "detail": "hybrid overall QWK = 0.7696  unified = 0.7560  delta = +0.0136"
+    },
+    {
+      "check": "hybrid_rt100_qwk_preserved",
+      "status": "PASS",
+      "detail": "rt_100 (RdSAP) hybrid = 0.7059  unified = 0.7059  delta = +0.0000"
+    },
+    {
+      "check": "hybrid_rt101_qwk_lifted",
+      "status": "PASS",
+      "detail": "rt_101 (SAP) hybrid = 0.5782  unified = 0.5173  delta = +0.0609"
+    },
+    {
+      "check": "hybrid_holdout_qwk_at_threshold",
+      "status": "PASS",
+      "detail": "hybrid holdout overall QWK = 0.7696 (>= 0.76 required)"
+    },
+    {
+      "check": "seed_stability_recorded",
+      "status": "PASS",
+      "detail": "4_seed_stability section present (seeds 42, 123, 2026)"
+    },
+    {
+      "check": "seed_stability_std_tight",
+      "status": "PASS",
+      "detail": "multi-seed QWK std = 0.0019 (must be < 0.01)"
+    },
+    {
+      "check": "seed_stability_min_above_threshold",
+      "status": "PASS",
+      "detail": "worst-seed QWK = 0.7696 (>= 0.76 required)"
+    },
+    {
+      "check": "champion_pickle_exists",
+      "status": "PASS",
+      "detail": "artefacts\\champion.pkl present"
+    },
+    {
+      "check": "champion_artefact_json_exists",
+      "status": "PASS",
+      "detail": "reports\\champion_artefact.json present"
+    },
+    {
+      "check": "champion_pickle_hash_matches",
+      "status": "PASS",
+      "detail": "sha256 ok (first 12 chars: 50f1fba2a542)"
+    },
+    {
+      "check": "champion_artefact_selection_rule_present",
+      "status": "PASS",
+      "detail": "selection_rule.rationale present in champion_artefact.json"
+    },
+    {
+      "check": "champion_artefact_holdout_qwk_recorded",
+      "status": "PASS",
+      "detail": "frozen-champion holdout QWK = 0.7696"
+    },
+    {
+      "check": "champion_artefact_feature_schema_present",
+      "status": "PASS",
+      "detail": "feature_schema records 86 columns"
+    },
+    {
+      "check": "predictions_oxford_csv_exists",
+      "status": "PASS",
+      "detail": "reports\\predictions_oxford.csv present"
+    },
+    {
+      "check": "predictions_csv_schema_complete",
+      "status": "PASS",
+      "detail": "all required columns present"
+    },
+    {
+      "check": "predictions_csv_bands_in_AG",
+      "status": "PASS",
+      "detail": "predicted bands are subset of ABCDEFG (observed: ['A', 'B', 'C', 'D', 'E', 'F', 'G'])"
+    },
+    {
+      "check": "predictions_csv_confidence_in_unit_interval",
+      "status": "PASS",
+      "detail": "confidence_proxy values in [0, 1]"
+    },
+    {
+      "check": "predictions_csv_has_train_and_test_splits",
+      "status": "PASS",
+      "detail": "split column has both 'train' and 'test'"
+    },
+    {
+      "check": "predictions_csv_actual_band_consistent",
+      "status": "PASS",
+      "detail": "actual_sap_score->band match rate = 100.00% (must be >= 99.9%)"
+    },
+    {
+      "check": "champion_robustness_json_exists",
+      "status": "PASS",
+      "detail": "reports\\champion_robustness.json present (run scripts/champion_robustness.py)"
+    },
+    {
+      "check": "robustness_qwk_matches_frozen_champion",
+      "status": "PASS",
+      "detail": "robustness QWK = 0.7696  frozen-champion QWK = 0.7696"
+    },
+    {
+      "check": "mae_band_units_below_0_4",
+      "status": "PASS",
+      "detail": "MAE in band-units = 0.316 (< 0.4 required; perfect = 0)"
+    },
+    {
+      "check": "linear_weighted_kappa_present_and_positive",
+      "status": "PASS",
+      "detail": "linear-weighted kappa = 0.6522 (> 0.5)"
+    },
+    {
+      "check": "ons_dsc_comparator_within_15_meets_national",
+      "status": "PASS",
+      "detail": "% within 15 SAP pts = 97.7% (ONS national benchmark: 93%)"
+    },
+    {
+      "check": "score_mae_at_or_below_assessor_noise",
+      "status": "PASS",
+      "detail": "score MAE = 4.04 SAP pts (< 6.0; assessor noise ~5)"
+    },
+    {
+      "check": "per_class_f1_ci_current_champion",
+      "status": "PASS",
+      "detail": "bootstrap CIs present for all 7 bands (F1 widths: A=0.12, B=0.04, C=0.02, D=0.03, E=0.06, F=0.19, G=0.34)"
+    },
+    {
+      "check": "confidence_proxy_monotone_qwk",
+      "status": "PASS",
+      "detail": "Q1 QWK = 0.6521, Q4 QWK = 0.8456, delta = +0.1935 (> +0.05 required)"
+    },
+    {
+      "check": "rt_100_within_15_meets_national",
+      "status": "PASS",
+      "detail": "rt_100 (n=10700): % within 15 = 97.5% (>= 93%)"
+    },
+    {
+      "check": "rt_101_within_15_meets_national",
+      "status": "PASS",
+      "detail": "rt_101 (n=1395): % within 15 = 98.8% (>= 93%)"
+    },
+    {
+      "check": "score_reliability_slope_reasonable",
+      "status": "PASS",
+      "detail": "reliability slope = 0.787"
+    },
+    {
+      "check": "score_reliability_intercept_bounded",
+      "status": "PASS",
+      "detail": "reliability intercept = +16.25"
+    },
+    {
+      "check": "figure_fig_confusion.png_exists",
+      "status": "PASS",
+      "detail": "reports/figures/fig_confusion.png present (regenerated since latest predictions CSV)"
+    },
+    {
+      "check": "figure_fig_classwise_f1.png_exists",
+      "status": "PASS",
+      "detail": "reports/figures/fig_classwise_f1.png present (regenerated since latest predictions CSV)"
+    },
+    {
+      "check": "figure_fig_score_reliability.png_exists",
+      "status": "PASS",
+      "detail": "reports/figures/fig_score_reliability.png present (regenerated since latest predictions CSV)"
+    },
+    {
+      "check": "figure_fig_perm_importance.png_exists",
+      "status": "PASS",
+      "detail": "reports/figures/fig_perm_importance.png present (regenerated since latest predictions CSV)"
+    },
+    {
+      "check": "figure_fig_shap_summary.png_exists",
+      "status": "PASS",
+      "detail": "reports/figures/fig_shap_summary.png present (regenerated since latest predictions CSV)"
+    },
+    {
+      "check": "champion_explanations_json_exists",
+      "status": "PASS",
+      "detail": "reports\\champion_explanations.json present (run scripts/champion_explanations.py)"
+    },
+    {
+      "check": "perm_importance_scored_on_qwk",
+      "status": "PASS",
+      "detail": "permutation importance scoring: 'Quadratic Weighted Kappa on hybrid-routed band predictions'"
+    },
+    {
+      "check": "perm_importance_top_20_recorded",
+      "status": "PASS",
+      "detail": "top_20 has 20 entries"
+    },
+    {
+      "check": "perm_importance_top_feature_positive",
+      "status": "PASS",
+      "detail": "top feature 'WINDOWS_DESCRIPTION' has delta-QWK = +0.0706"
+    },
+    {
+      "check": "shap_summary_generated",
+      "status": "PASS",
+      "detail": "SHAP summary generated"
+    }
+  ]
+}

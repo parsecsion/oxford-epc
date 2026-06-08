@@ -1,0 +1,17 @@
+{
+  "library": "TensorFlow",
+  "tensorflow_version": "2.21.0",
+  "model": "CORN ordinal neural network (Cao, Mirjalili & Raschka, 2020)",
+  "architecture": "Dense(128)->Dropout->Dense(64)->Dropout->Dense(K-1, sigmoid)",
+  "input_features": 185,
+  "epochs_run": 48,
+  "fit_seconds": 61.1,
+  "holdout": {
+    "n": 12095,
+    "qwk": 0.6588464164503425,
+    "accuracy": 0.6331541959487391,
+    "balanced_accuracy": 0.3573306575292948,
+    "macro_f1": 0.3569768297997918
+  },
+  "note": "Trained and evaluated as an ordinal-aware challenger. Competitive but below the regression-to-band champion (holdout QWK 0.7696); retained to satisfy the brief's TensorFlow requirement and to confirm the tree family's advantage on this tabular task (Grinsztajn et al., 2022)."
+}

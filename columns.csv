@@ -1,0 +1,101 @@
+filename,column,datatype,description
+certificates.csv,LMK_KEY,string,Individual lodgement identifier. Guaranteed to be unique and can be used to identify a certificate in the downloads and the API.
+certificates.csv,ADDRESS1,string,First line of the address
+certificates.csv,ADDRESS2,string,Second line of the address
+certificates.csv,ADDRESS3,string,Third line of the address
+certificates.csv,POSTCODE,string,The postcode of the property
+certificates.csv,BUILDING_REFERENCE_NUMBER,string,Unique identifier for the property.
+certificates.csv,CURRENT_ENERGY_RATING,string,Current energy rating converted into a linear 'A to G' rating (where A is the most energy efficient and G is the least energy efficient)
+certificates.csv,POTENTIAL_ENERGY_RATING,string,Estimated potential energy rating converted into a linear 'A to G' rating (where A is the most energy efficient and G is the least energy efficient)
+certificates.csv,CURRENT_ENERGY_EFFICIENCY,integer,"Based on cost of energy, i.e. energy required for space heating, water heating and lighting [in kWh/year] multiplied by fuel costs. (£/m²/year where cost is derived from kWh)."
+certificates.csv,POTENTIAL_ENERGY_EFFICIENCY,integer,The potential energy efficiency rating of the property.
+certificates.csv,PROPERTY_TYPE,string,"Describes the type of property such as House, Flat, Maisonette etc. This is the type differentiator for dwellings."
+certificates.csv,BUILT_FORM,string,"The building type of the Property e.g. Detached, Semi-Detached, Terrace etc. Together with the Property Type, the Build Form produces a structured description of the property"
+certificates.csv,INSPECTION_DATE,date,The date that the inspection was actually carried out by the energy assessor
+certificates.csv,LOCAL_AUTHORITY,string,Office for National Statistics (ONS) code. Local authority area in which the building is located.
+certificates.csv,CONSTITUENCY,string,Office for National Statistics (ONS) code. Parliamentary constituency in which the building is located.
+certificates.csv,COUNTY,string,County in which the building is located (where applicable)
+certificates.csv,LODGEMENT_DATE,date,Date lodged on the Energy Performance of Buildings Register
+certificates.csv,TRANSACTION_TYPE,string,"Type of transaction that triggered EPC. For example, one of: marketed sale; non-marketed sale; new-dwelling; rental; not sale or rental; assessment for Green Deal; following Green Deal; FIT application; none of the above; RHI application; ECO assessment. Where the reason for the assessment is unknown by the energy assessor the transaction type will be recorded as 'none of the above'. Transaction types may be changed over time."
+certificates.csv,ENVIRONMENTAL_IMPACT_CURRENT,integer,The Environmental Impact Rating. A measure of the property's current impact on the environment in terms of carbon dioxide (CO₂) emissions. The higher the rating the lower the CO₂ emissions. (CO₂ emissions in tonnes / year)
+certificates.csv,ENVIRONMENTAL_IMPACT_POTENTIAL,integer,The potential Environmental Impact Rating. A measure of the property's potential impact on the environment in terms of carbon dioxide (CO₂) emissions after improvements have been carried out. The higher the rating the lower the CO₂ emissions. (CO₂ emissions in tonnes / year)
+certificates.csv,ENERGY_CONSUMPTION_CURRENT,float,Current estimated total energy consumption for the property in a 12 month period (kWh/m2). Displayed on EPC as the current primary energy use per square metre of floor area.
+certificates.csv,ENERGY_CONSUMPTION_POTENTIAL,float,Estimated potential total energy consumption for the Property in a 12 month period. Value is Kilowatt Hours per Square Metre (kWh/m²)
+certificates.csv,CO2_EMISSIONS_CURRENT,decimal,CO₂ emissions per year in tonnes/year.
+certificates.csv,CO2_EMISS_CURR_PER_FLOOR_AREA,decimal,CO₂ emissions per square metre floor area per year in kg/m²
+certificates.csv,CO2_EMISSIONS_POTENTIAL,decimal,Estimated value in Tonnes per Year of the total CO₂ emissions produced by the Property in 12 month period.
+certificates.csv,LIGHTING_COST_CURRENT,float,GBP. Current estimated annual energy costs for lighting the property.
+certificates.csv,LIGHTING_COST_POTENTIAL,float,GBP. Potential estimated annual energy costs for lighting the property after improvements have been made.
+certificates.csv,HEATING_COST_CURRENT,float,GBP. Current estimated annual energy costs for heating the property.
+certificates.csv,HEATING_COST_POTENTIAL,float,GBP. Potential annual energy costs for lighting the property after improvements have been made.
+certificates.csv,HOT_WATER_COST_CURRENT,float,GBP. Current estimated annual energy costs for hot water
+certificates.csv,HOT_WATER_COST_POTENTIAL,float,GBP. Potential estimated annual energy costs for hot water after improvements have been made.
+certificates.csv,TOTAL_FLOOR_AREA,decimal,"The total useful floor area is the total of all enclosed spaces measured to the internal face of the external walls, i.e. the gross floor area as measured in accordance with the guidance issued from time to time by the Royal Institute of Chartered Surveyors or by a body replacing that institution. (m²)"
+certificates.csv,ENERGY_TARIFF,string,"Type of electricity tariff for the property, e.g. single."
+certificates.csv,MAINS_GAS_FLAG,string,Whether mains gas is available. Yes means that there is a gas meter or a gas-burning appliance in the dwelling. A closed-off gas pipe does not count.
+certificates.csv,FLOOR_LEVEL,string,"Flats and maisonettes only. Floor level relative to the lowest level of the property (0 for ground floor). If there is a basement, the basement is level 0 and the other floors are from 1 upwards"
+certificates.csv,FLAT_TOP_STOREY,string,Whether the flat is on the top storey
+certificates.csv,FLAT_STOREY_COUNT,decimal,The number of storeys in the apartment block.
+certificates.csv,MAIN_HEATING_CONTROLS,string,Type of main heating controls. Includes both main heating systems if there are two.
+certificates.csv,MULTI_GLAZE_PROPORTION,float,The estimated banded range (e.g. 0% - 10%) of the total glazed area of the Property that is multiple glazed.
+certificates.csv,GLAZED_TYPE,string,"The type of glazing. From British Fenestration Rating Council or manufacturer declaration, one of; single; double; triple."
+certificates.csv,GLAZED_AREA,string,Ranged estimate of the total glazed area of the Habitable Area.
+certificates.csv,EXTENSION_COUNT,integer,The number of extensions added to the property. Between 0 and 4.
+certificates.csv,NUMBER_HABITABLE_ROOMS,float,"Habitable rooms include any living room, sitting room, dining room, bedroom, study and similar; and also a non-separated conservatory. A kitchen/diner having a discrete seating area (with space for a table and four chairs) also counts as a habitable room. A non-separated conservatory adds to the habitable room count if it has an internal quality door between it and the dwelling. Excluded from the room count are any room used solely as a kitchen, utility room, bathroom, cloakroom, en-suite accommodation and similar and any hallway, stairs or landing; and also any room not having a window."
+certificates.csv,NUMBER_HEATED_ROOMS,float,The number of heated rooms in the property if more than half of the habitable rooms are not heated.
+certificates.csv,LOW_ENERGY_LIGHTING,integer,The percentage of low energy lighting present in the property as a percentage of the total fixed lights in the property. 0% indicates that no low-energy lighting is present.
+certificates.csv,NUMBER_OPEN_FIREPLACES,integer,The number of Open Fireplaces in the Property. An Open Fireplace is a fireplace that still allows air to pass between the inside of the Property and the outside.
+certificates.csv,HOTWATER_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,HOT_WATER_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,HOT_WATER_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,FLOOR_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,FLOOR_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,FLOOR_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,WINDOWS_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,WINDOWS_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,WINDOWS_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,WALLS_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,WALLS_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,WALLS_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,SECONDHEAT_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,SHEATING_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,SHEATING_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,ROOF_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,ROOF_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,ROOF_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,MAINHEAT_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,MAINHEAT_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,MAINHEAT_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,MAINHEATCONT_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,MAINHEATC_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,MAINHEATC_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,LIGHTING_DESCRIPTION,string,Overall description of the property feature
+certificates.csv,LIGHTING_ENERGY_EFF,string,Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,LIGHTING_ENV_EFF,string,Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.
+certificates.csv,MAIN_FUEL,string,"The type of fuel used to power the central heating e.g. Gas, Electricity"
+certificates.csv,WIND_TURBINE_COUNT,float,Number of wind turbines; 0 if none.
+certificates.csv,HEAT_LOSS_CORRIDOR,string,"Flats and maisonettes only. Indicates that the flat contains a corridor through which heat is lost. Heat loss corridor, one of: no corridor; heated corridor; unheated corridor"
+certificates.csv,UNHEATED_CORRIDOR_LENGTH,decimal,"The total length of unheated corridor in the flat. Only populated if flat or maisonette contains unheated corridor. If unheated corridor, length of sheltered wall (m²)."
+certificates.csv,FLOOR_HEIGHT,decimal,Average height of the storey in metres.
+certificates.csv,PHOTO_SUPPLY,float,Percentage of photovoltaic area as a percentage of total roof area. 0% indicates that a Photovoltaic Supply is not present in the property.
+certificates.csv,SOLAR_WATER_HEATING_FLAG,string,Indicates whether the heating in the Property is solar powered.
+certificates.csv,MECHANICAL_VENTILATION,string,Identifies the type of mechanical ventilation the property has. This is required for the RdSAP calculation.
+certificates.csv,ADDRESS,string,"Field containing the concatenation of address1, address2 and address3. Note that post code is recorded separately."
+certificates.csv,LOCAL_AUTHORITY_LABEL,string,The name of the local authority area in which the building is located. This field is for additional information only and should not be relied upon: please refer to the Local Authority ONS Code.
+certificates.csv,CONSTITUENCY_LABEL,string,The name of the parliamentary constituency in which the building is located. This field is for additional information only and should not be relied upon: please refer to the Constituency ONS Code.
+certificates.csv,POSTTOWN,string,The post town of the property
+certificates.csv,CONSTRUCTION_AGE_BAND,string,Age band when building part constructed. England & Wales only. One of: before 1900; 1900-1929; 1930-1949; 1950-1966; 1967-1975; 1976-1982; 1983-1990; 1991-1995; 1996-2002; 2003-2006; 2007-2011; 2012 onwards.
+certificates.csv,LODGEMENT_DATETIME,datetime,Date and time lodged on the Energy Performance of Buildings Register.
+certificates.csv,TENURE,string,Describes the tenure type of the property. One of: Owner-occupied; Rented (social); Rented (private).
+certificates.csv,FIXED_LIGHTING_OUTLETS_COUNT,float,The number of fixed lighting outlets.
+certificates.csv,LOW_ENERGY_FIXED_LIGHT_COUNT,float,The number of low-energy fixed lighting outlets.
+certificates.csv,UPRN,integer,The UPRN submitted by an assessor or alternatively from the department’s address matching algorithm.
+certificates.csv,UPRN_SOURCE,string,"Populated with the values ""Energy Assessor"" or ""Address Matched"" to show how the UPRN was populated."
+certificates.csv,REPORT_TYPE,integer,"Type of assessment carried out on the building, for domestic dwellings this is either a SAP (Standard Assessment Procedure) or a Reduced SAP. 100: RdSAP (Reduced SAP for existing buildings) and 101: SAP (full Sap for new dwellings, including conversions and change of use). This variable will help distinguish between new and existing dwellings."
+recommendations.csv,LMK_KEY,string,Individual lodgement identifier. Guaranteed to be unique and can be used to identify a certificate in the downloads and the API.
+recommendations.csv,IMPROVEMENT_ITEM,integer,Used to order the recommendations on the output EPC.
+recommendations.csv,IMPROVEMENT_SUMMARY_TEXT,string,A short description of the suggested improvement.
+recommendations.csv,IMPROVEMENT_DESCR_TEXT,string,Detailed description of the suggested improvement.
+recommendations.csv,IMPROVEMENT_ID,integer,Code number associated with the improvement measure.
+recommendations.csv,IMPROVEMENT_ID_TEXT,string,The text associated with the improvement measure.
+recommendations.csv,INDICATIVE_COST,string,"The indicative costs are the cost of installed recommendation measures, which are fixed no matter the type of house being assessed. These are displayed as a cost range on the Energy Performance Certificate as costs vary between individual suppliers."

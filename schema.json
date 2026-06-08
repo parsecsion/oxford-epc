@@ -1,0 +1,450 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "tables": [
+        {
+            "url": "certificates.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "LMK_KEY",
+                        "dc:description": "Individual lodgement identifier. Guaranteed to be unique and can be used to identify a certificate in the downloads and the API.",
+                        "datatype": "string",
+                        "required": true
+                    }, {
+                        "name": "ADDRESS1",
+                        "dc:description": "First line of the address",
+                        "datatype": "string"
+                    }, {
+                        "name": "ADDRESS2",
+                        "dc:description": "Second line of the address",
+                        "datatype": "string"
+                    }, {
+                        "name": "ADDRESS3",
+                        "dc:description": "Third line of the address",
+                        "datatype": "string"
+                    }, {
+                        "name": "POSTCODE",
+                        "dc:description": "The postcode of the property",
+                        "datatype": "string"
+                    }, {
+                        "name": "BUILDING_REFERENCE_NUMBER",
+                        "dc:description": "Unique identifier for the property.",
+                        "datatype": "string"
+                    }, {
+                        "name": "CURRENT_ENERGY_RATING",
+                        "dc:description": "Current energy rating converted into a linear 'A to G' rating (where A is the most energy efficient and G is the least energy efficient)",
+                        "datatype": "string"
+                    }, {
+                        "name": "POTENTIAL_ENERGY_RATING",
+                        "dc:description": "Estimated potential energy rating converted into a linear 'A to G' rating (where A is the most energy efficient and G is the least energy efficient)",
+                        "datatype": "string"
+                    }, {
+                        "name": "CURRENT_ENERGY_EFFICIENCY",
+                        "dc:description": "Based on cost of energy, i.e. energy required for space heating, water heating and lighting [in kWh/year] multiplied by fuel costs. (£/m²/year where cost is derived from kWh).",
+                        "datatype": "integer"
+                    }, {
+                        "name": "POTENTIAL_ENERGY_EFFICIENCY",
+                        "dc:description": "The potential energy efficiency rating of the property.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "PROPERTY_TYPE",
+                        "dc:description": "Describes the type of property such as House, Flat, Maisonette etc. This is the type differentiator for dwellings.",
+                        "datatype": "string"
+                    }, {
+                        "name": "BUILT_FORM",
+                        "dc:description": "The building type of the Property e.g. Detached, Semi-Detached, Terrace etc. Together with the Property Type, the Build Form produces a structured description of the property",
+                        "datatype": "string"
+                    }, {
+                        "name": "INSPECTION_DATE",
+                        "dc:description": "The date that the inspection was actually carried out by the energy assessor",
+                        "datatype": "date"
+                    }, {
+                        "name": "LOCAL_AUTHORITY",
+                        "dc:description": "Office for National Statistics (ONS) code. Local authority area in which the building is located.",
+                        "datatype": "string"
+                    }, {
+                        "name": "CONSTITUENCY",
+                        "dc:description": "Office for National Statistics (ONS) code. Parliamentary constituency in which the building is located.",
+                        "datatype": "string"
+                    }, {
+                        "name": "COUNTY",
+                        "dc:description": "County in which the building is located (where applicable)",
+                        "datatype": "string"
+                    }, {
+                        "name": "LODGEMENT_DATE",
+                        "dc:description": "Date lodged on the Energy Performance of Buildings Register",
+                        "datatype": "date"
+                    }, {
+                        "name": "TRANSACTION_TYPE",
+                        "dc:description": "Type of transaction that triggered EPC. For example, one of: marketed sale; non-marketed sale; new-dwelling; rental; not sale or rental; assessment for Green Deal; following Green Deal; FIT application; none of the above; RHI application; ECO assessment. Where the reason for the assessment is unknown by the energy assessor the transaction type will be recorded as 'none of the above'. Transaction types may be changed over time.",
+                        "datatype": "string"
+                    }, {
+                        "name": "ENVIRONMENTAL_IMPACT_CURRENT",
+                        "dc:description": "The Environmental Impact Rating. A measure of the property's current impact on the environment in terms of carbon dioxide (CO₂) emissions. The higher the rating the lower the CO₂ emissions. (CO₂ emissions in tonnes / year)",
+                        "datatype": "integer"
+                    }, {
+                        "name": "ENVIRONMENTAL_IMPACT_POTENTIAL",
+                        "dc:description": "The potential Environmental Impact Rating. A measure of the property's potential impact on the environment in terms of carbon dioxide (CO₂) emissions after improvements have been carried out. The higher the rating the lower the CO₂ emissions. (CO₂ emissions in tonnes / year)",
+                        "datatype": "integer"
+                    }, {
+                        "name": "ENERGY_CONSUMPTION_CURRENT",
+                        "dc:description": "Current estimated total energy consumption for the property in a 12 month period (kWh/m2). Displayed on EPC as the current primary energy use per square metre of floor area.",
+                        "datatype": "float"
+                    }, {
+                        "name": "ENERGY_CONSUMPTION_POTENTIAL",
+                        "dc:description": "Estimated potential total energy consumption for the Property in a 12 month period. Value is Kilowatt Hours per Square Metre (kWh/m²)",
+                        "datatype": "float"
+                    }, {
+                        "name": "CO2_EMISSIONS_CURRENT",
+                        "dc:description": "CO₂ emissions per year in tonnes/year.",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "CO2_EMISS_CURR_PER_FLOOR_AREA",
+                        "dc:description": "CO₂ emissions per square metre floor area per year in kg/m²",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "CO2_EMISSIONS_POTENTIAL",
+                        "dc:description": "Estimated value in Tonnes per Year of the total CO₂ emissions produced by the Property in 12 month period.",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "LIGHTING_COST_CURRENT",
+                        "dc:description": "GBP. Current estimated annual energy costs for lighting the property.",
+                        "datatype": "float"
+                    }, {
+                        "name": "LIGHTING_COST_POTENTIAL",
+                        "dc:description": "GBP. Potential estimated annual energy costs for lighting the property after improvements have been made.",
+                        "datatype": "float"
+                    }, {
+                        "name": "HEATING_COST_CURRENT",
+                        "dc:description": "GBP. Current estimated annual energy costs for heating the property.",
+                        "datatype": "float"
+                    }, {
+                        "name": "HEATING_COST_POTENTIAL",
+                        "dc:description": "GBP. Potential annual energy costs for lighting the property after improvements have been made.",
+                        "datatype": "float"
+                    }, {
+                        "name": "HOT_WATER_COST_CURRENT",
+                        "dc:description": "GBP. Current estimated annual energy costs for hot water",
+                        "datatype": "float"
+                    }, {
+                        "name": "HOT_WATER_COST_POTENTIAL",
+                        "dc:description": "GBP. Potential estimated annual energy costs for hot water after improvements have been made.",
+                        "datatype": "float"
+                    }, {
+                        "name": "TOTAL_FLOOR_AREA",
+                        "dc:description": "The total useful floor area is the total of all enclosed spaces measured to the internal face of the external walls, i.e. the gross floor area as measured in accordance with the guidance issued from time to time by the Royal Institute of Chartered Surveyors or by a body replacing that institution. (m²)",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "ENERGY_TARIFF",
+                        "dc:description": "Type of electricity tariff for the property, e.g. single.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINS_GAS_FLAG",
+                        "dc:description": "Whether mains gas is available. Yes means that there is a gas meter or a gas-burning appliance in the dwelling. A closed-off gas pipe does not count.",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLOOR_LEVEL",
+                        "dc:description": "Flats and maisonettes only. Floor level relative to the lowest level of the property (0 for ground floor). If there is a basement, the basement is level 0 and the other floors are from 1 upwards",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLAT_TOP_STOREY",
+                        "dc:description": "Whether the flat is on the top storey",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLAT_STOREY_COUNT",
+                        "dc:description": "The number of storeys in the apartment block.",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "MAIN_HEATING_CONTROLS",
+                        "dc:description": "Type of main heating controls. Includes both main heating systems if there are two.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MULTI_GLAZE_PROPORTION",
+                        "dc:description": "The estimated banded range (e.g. 0% - 10%) of the total glazed area of the Property that is multiple glazed.",
+                        "datatype": "float"
+                    }, {
+                        "name": "GLAZED_TYPE",
+                        "dc:description": "The type of glazing. From British Fenestration Rating Council or manufacturer declaration, one of; single; double; triple.",
+                        "datatype": "string"
+                    }, {
+                        "name": "GLAZED_AREA",
+                        "dc:description": "Ranged estimate of the total glazed area of the Habitable Area.",
+                        "datatype": "string"
+                    }, {
+                        "name": "EXTENSION_COUNT",
+                        "dc:description": "The number of extensions added to the property. Between 0 and 4.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "NUMBER_HABITABLE_ROOMS",
+                        "dc:description": "Habitable rooms include any living room, sitting room, dining room, bedroom, study and similar; and also a non-separated conservatory. A kitchen/diner having a discrete seating area (with space for a table and four chairs) also counts as a habitable room. A non-separated conservatory adds to the habitable room count if it has an internal quality door between it and the dwelling. Excluded from the room count are any room used solely as a kitchen, utility room, bathroom, cloakroom, en-suite accommodation and similar and any hallway, stairs or landing; and also any room not having a window.",
+                        "datatype": "float"
+                    }, {
+                        "name": "NUMBER_HEATED_ROOMS",
+                        "dc:description": "The number of heated rooms in the property if more than half of the habitable rooms are not heated.",
+                        "datatype": "float"
+                    }, {
+                        "name": "LOW_ENERGY_LIGHTING",
+                        "dc:description": "The percentage of low energy lighting present in the property as a percentage of the total fixed lights in the property. 0% indicates that no low-energy lighting is present.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "NUMBER_OPEN_FIREPLACES",
+                        "dc:description": "The number of Open Fireplaces in the Property. An Open Fireplace is a fireplace that still allows air to pass between the inside of the Property and the outside.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "HOTWATER_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "HOT_WATER_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "HOT_WATER_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLOOR_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLOOR_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "FLOOR_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "WINDOWS_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "WINDOWS_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "WINDOWS_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "WALLS_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "WALLS_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "WALLS_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "SECONDHEAT_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "SHEATING_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "SHEATING_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "ROOF_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "ROOF_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "ROOF_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEAT_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEAT_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEAT_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEATCONT_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEATC_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAINHEATC_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "LIGHTING_DESCRIPTION",
+                        "dc:description": "Overall description of the property feature",
+                        "datatype": "string"
+                    }, {
+                        "name": "LIGHTING_ENERGY_EFF",
+                        "dc:description": "Energy efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "LIGHTING_ENV_EFF",
+                        "dc:description": "Environmental efficiency rating. One of: very good; good; average; poor; very poor. On actual energy certificate shown as one to five star rating.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MAIN_FUEL",
+                        "dc:description": "The type of fuel used to power the central heating e.g. Gas, Electricity",
+                        "datatype": "string"
+                    }, {
+                        "name": "WIND_TURBINE_COUNT",
+                        "dc:description": "Number of wind turbines; 0 if none.",
+                        "datatype": "float"
+                    }, {
+                        "name": "HEAT_LOSS_CORRIDOR",
+                        "dc:description": "Flats and maisonettes only. Indicates that the flat contains a corridor through which heat is lost. Heat loss corridor, one of: no corridor; heated corridor; unheated corridor",
+                        "datatype": "string"
+                    }, {
+                        "name": "UNHEATED_CORRIDOR_LENGTH",
+                        "dc:description": "The total length of unheated corridor in the flat. Only populated if flat or maisonette contains unheated corridor. If unheated corridor, length of sheltered wall (m²).",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "FLOOR_HEIGHT",
+                        "dc:description": "Average height of the storey in metres.",
+                        "datatype": "decimal"
+                    }, {
+                        "name": "PHOTO_SUPPLY",
+                        "dc:description": "Percentage of photovoltaic area as a percentage of total roof area. 0% indicates that a Photovoltaic Supply is not present in the property.",
+                        "datatype": "float"
+                    }, {
+                        "name": "SOLAR_WATER_HEATING_FLAG",
+                        "dc:description": "Indicates whether the heating in the Property is solar powered.",
+                        "datatype": "string"
+                    }, {
+                        "name": "MECHANICAL_VENTILATION",
+                        "dc:description": "Identifies the type of mechanical ventilation the property has. This is required for the RdSAP calculation.",
+                        "datatype": "string"
+                    }, {
+                        "name": "ADDRESS",
+                        "dc:description": "Field containing the concatenation of address1, address2 and address3. Note that post code is recorded separately.",
+                        "datatype": "string"
+                    }, {
+                        "name": "LOCAL_AUTHORITY_LABEL",
+                        "dc:description": "The name of the local authority area in which the building is located. This field is for additional information only and should not be relied upon: please refer to the Local Authority ONS Code.",
+                        "datatype": "string"
+                    }, {
+                        "name": "CONSTITUENCY_LABEL",
+                        "dc:description": "The name of the parliamentary constituency in which the building is located. This field is for additional information only and should not be relied upon: please refer to the Constituency ONS Code.",
+                        "datatype": "string"
+                    }, {
+                        "name": "POSTTOWN",
+                        "dc:description": "The post town of the property",
+                        "datatype": "string"
+                    }, {
+                        "name": "CONSTRUCTION_AGE_BAND",
+                        "dc:description": "Age band when building part constructed. England & Wales only. One of: before 1900; 1900-1929; 1930-1949; 1950-1966; 1967-1975; 1976-1982; 1983-1990; 1991-1995; 1996-2002; 2003-2006; 2007-2011; 2012 onwards.",
+                        "datatype": "string"
+                    }, {
+                        "name": "LODGEMENT_DATETIME",
+                        "dc:description": "Date and time lodged on the Energy Performance of Buildings Register.",
+                        "datatype": {"base":"datetime",
+                                     "format": "yyyy-MM-dd HH:mm:ss"}
+                    }, {
+                        "name": "TENURE",
+                        "dc:description": "Describes the tenure type of the property. One of: Owner-occupied; Rented (social); Rented (private).",
+                        "datatype": "string"
+                    }, {
+                        "name": "FIXED_LIGHTING_OUTLETS_COUNT",
+                        "dc:description": "The number of fixed lighting outlets.",
+                        "datatype": "float"
+                    }, {
+                        "name": "LOW_ENERGY_FIXED_LIGHT_COUNT",
+                        "dc:description": "The number of low-energy fixed lighting outlets.",
+                        "datatype": "float"
+                    }, {
+                        "name": "UPRN",
+                        "dc:description": "The UPRN submitted by an assessor or alternatively from the department’s address matching algorithm.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "UPRN_SOURCE",
+                        "dc:description": "Populated with the values \"Energy Assessor\" or \"Address Matched\" to show how the UPRN was populated.",
+                        "datatype": "string"
+                    }, {
+                        "name": "REPORT_TYPE",
+                        "dc:description": "Type of assessment carried out on the building, for domestic dwellings this is either a SAP (Standard Assessment Procedure) or a Reduced SAP. 100: RdSAP (Reduced SAP for existing buildings) and 101: SAP (full Sap for new dwellings, including conversions and change of use). This variable will help distinguish between new and existing dwellings.",
+                        "datatype": "integer"
+                    }
+                ],
+                "primaryKey": "LMK_KEY",
+                "foreignKeys": [{
+                    "columnReference": "LMK_KEY",
+                    "reference": {
+                      "resource": "recommendations.csv",
+                      "columnReference": "LMK_KEY"
+                    }
+                }]
+            },
+            "dialect": {
+                "header": true
+            }
+        } , {
+            "url": "recommendations.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "LMK_KEY",
+                        "dc:description": "Individual lodgement identifier. Guaranteed to be unique and can be used to identify a certificate in the downloads and the API.",
+                        "datatype": "string",
+                        "required": true
+                    }, {
+                        "name": "IMPROVEMENT_ITEM",
+                        "dc:description": "Used to order the recommendations on the output EPC.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "IMPROVEMENT_SUMMARY_TEXT",
+                        "dc:description": "A short description of the suggested improvement.",
+                        "datatype": "string"
+                    }, {
+                        "name": "IMPROVEMENT_DESCR_TEXT",
+                        "dc:description": "Detailed description of the suggested improvement.",
+                        "datatype": "string"
+                    }, {
+                        "name": "IMPROVEMENT_ID",
+                        "dc:description": "Code number associated with the improvement measure.",
+                        "datatype": "integer"
+                    }, {
+                        "name": "IMPROVEMENT_ID_TEXT",
+                        "dc:description": "The text associated with the improvement measure.",
+                        "datatype": "string"
+                    }, {
+                        "name": "INDICATIVE_COST",
+                        "dc:description": "The indicative costs are the cost of installed recommendation measures, which are fixed no matter the type of house being assessed. These are displayed as a cost range on the Energy Performance Certificate as costs vary between individual suppliers.",
+                        "datatype": "string"
+                    }
+                ],
+                "primaryKey": "LMK_KEY",
+                "foreignKeys": [{
+                    "columnReference": "LMK_KEY",
+                    "reference": {
+                      "resource": "certificates.csv",
+                      "columnReference": "LMK_KEY"
+                    }
+                }]
+            },
+            "dialect": {
+                "header": true
+            }
+        }
+    ]
+}

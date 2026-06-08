@@ -1,0 +1,75 @@
+{
+  "holdout_n": 12095,
+  "point_estimates": {
+    "qwk": 0.7695849172500705,
+    "r2": 0.6787622978073362,
+    "rmse_sap_points": 5.779547947465843
+  },
+  "bootstrap_95_ci": {
+    "qwk": [
+      0.7600430053940653,
+      0.7780038329707673
+    ],
+    "r2": [
+      0.65950960393472,
+      0.6964800981015827
+    ],
+    "rmse_sap_points": [
+      5.642530933718768,
+      5.9125324270343285
+    ],
+    "n_resamples": 1000,
+    "seed": 42
+  },
+  "vs_next_best": {
+    "next_best_model": "lgbm_expected_value (from model_panel.json)",
+    "next_best_qwk": 0.7548,
+    "champion_qwk": 0.7695849172500705,
+    "difference": 0.014784917250070473,
+    "next_best_below_champion_ci_lower_bound": true
+  },
+  "error_breakdown": {
+    "n": 12095,
+    "correct": 8466,
+    "off_by_1": 3445,
+    "off_by_2": 176,
+    "off_by_3_plus": 8,
+    "predicted_better_than_actual": 917,
+    "predicted_worse_than_actual": 2712,
+    "conservative_bias_ratio": 2.9574700109051255
+  },
+  "cohorts_for_recommendations": {
+    "n_certificates_total": 76400,
+    "pre_1929_count": 17136,
+    "flag_solid_brick_bare_count": 20414,
+    "flag_no_loft_insulation_count": 8448,
+    "flag_single_glazed_count": 4734,
+    "single_glazed_1900_1949_count": 1935
+  },
+  "postcode_districts": [
+    {
+      "district": "OX4",
+      "n_certificates": 32084,
+      "pre_1900_count": 2390,
+      "pre_1900_pct": 7.4491958608652284
+    },
+    {
+      "district": "OX2",
+      "n_certificates": 16265,
+      "pre_1900_count": 2268,
+      "pre_1900_pct": 13.94405164463572
+    },
+    {
+      "district": "OX1",
+      "n_certificates": 7033,
+      "pre_1900_count": 950,
+      "pre_1900_pct": 13.507749182425707
+    },
+    {
+      "district": "OX3",
+      "n_certificates": 21018,
+      "pre_1900_count": 507,
+      "pre_1900_pct": 2.4122180987724806
+    }
+  ]
+}

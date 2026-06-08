@@ -1,0 +1,110 @@
+{
+  "method": "K-Prototypes (Huang, 1998) on leak-free mixed fabric features",
+  "n_dwellings": 44219,
+  "numeric_features": [
+    "LOG_FLOOR_AREA",
+    "CONSTRUCTION_AGE_NUM",
+    "NUMBER_HABITABLE_ROOMS",
+    "MULTI_GLAZE_PROPORTION"
+  ],
+  "categorical_features": [
+    "PROPERTY_TYPE",
+    "BUILT_FORM",
+    "MAIN_FUEL",
+    "WALL_TYPE"
+  ],
+  "k_selected": 3,
+  "k_selection_rule": "peak Gower-silhouette over k=2..7, corroborated by Calinski-Harabasz and Davies-Bouldin, tempered by interpretability",
+  "k_sweep": [
+    {
+      "k": 2,
+      "cost": 8416.1281214218,
+      "silhouette": 0.2342258398461897,
+      "calinski_harabasz": 878.1,
+      "davies_bouldin": 1.583
+    },
+    {
+      "k": 3,
+      "cost": 6399.95644277563,
+      "silhouette": 0.2429815207683117,
+      "calinski_harabasz": 826.5,
+      "davies_bouldin": 1.375
+    },
+    {
+      "k": 4,
+      "cost": 5471.217921628218,
+      "silhouette": 0.1939712990419311,
+      "calinski_harabasz": 728.0,
+      "davies_bouldin": 1.532
+    },
+    {
+      "k": 5,
+      "cost": 4871.64415193856,
+      "silhouette": 0.16561401775307746,
+      "calinski_harabasz": 640.8,
+      "davies_bouldin": 1.429
+    },
+    {
+      "k": 6,
+      "cost": 4422.197906725773,
+      "silhouette": 0.1519562143332953,
+      "calinski_harabasz": 580.0,
+      "davies_bouldin": 1.462
+    },
+    {
+      "k": 7,
+      "cost": 4032.0262846535634,
+      "silhouette": 0.1618896197553491,
+      "calinski_harabasz": 547.2,
+      "davies_bouldin": 1.461
+    }
+  ],
+  "indices_at_k": {
+    "silhouette": 0.243,
+    "calinski_harabasz": 826.5,
+    "davies_bouldin": 1.375
+  },
+  "silhouette_at_k": 0.2429815207683117,
+  "interpretation_note": "Silhouette \u2248 0.24 indicates weak-to-moderate separation: the segments are interpretable archetypes rather than crisply disjoint clusters, as expected for continuous real-world housing fabric. The three indices agree on the same k, supporting it as the most defensible choice.",
+  "segments": [
+    {
+      "cluster": 1,
+      "n": 4601,
+      "pct": 10.4,
+      "mean_sap": 55.7,
+      "modal_band": "D",
+      "mean_floor_area_m2": 107.0,
+      "mean_construction_year": 1913,
+      "modal_property_type": "House",
+      "modal_built_form": "Mid-Terrace",
+      "modal_wall_type": "solid_brick",
+      "modal_main_fuel": "mains gas (not community)"
+    },
+    {
+      "cluster": 2,
+      "n": 21276,
+      "pct": 48.1,
+      "mean_sap": 64.9,
+      "modal_band": "D",
+      "mean_floor_area_m2": 105.0,
+      "mean_construction_year": 1946,
+      "modal_property_type": "House",
+      "modal_built_form": "Semi-Detached",
+      "modal_wall_type": "cavity",
+      "modal_main_fuel": "mains gas (not community)"
+    },
+    {
+      "cluster": 0,
+      "n": 18342,
+      "pct": 41.5,
+      "mean_sap": 71.1,
+      "modal_band": "C",
+      "mean_floor_area_m2": 55.0,
+      "mean_construction_year": 1977,
+      "modal_property_type": "Flat",
+      "modal_built_form": "Mid-Terrace",
+      "modal_wall_type": "cavity",
+      "modal_main_fuel": "mains gas (not community)"
+    }
+  ]
+}

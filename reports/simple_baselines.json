@@ -1,0 +1,8 @@
+{
+  "decision_tree_depth5_qwk": 0.6023,
+  "heuristic_era_wall_qwk": 0.5449,
+  "champion_qwk": 0.7696,
+  "champion_gain_over_tree": 0.1673,
+  "champion_gain_over_heuristic": 0.2247,
+  "verdict": "GBM complexity justified"
+}

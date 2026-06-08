@@ -1,0 +1,119 @@
+{
+  "frozen_at": "2026-06-04T16:24:16",
+  "champion_pickle": "artefacts\\champion.pkl",
+  "permutation_importance": {
+    "sample_n": 4000,
+    "n_repeats": 5,
+    "scoring": "Quadratic Weighted Kappa on hybrid-routed band predictions",
+    "elapsed_seconds": 313.5130970478058,
+    "top_20": [
+      {
+        "feature": "WINDOWS_DESCRIPTION",
+        "importance_mean": 0.07058390519144686,
+        "importance_std": 0.0018220585898885942
+      },
+      {
+        "feature": "CONSTRUCTION_AGE_NUM",
+        "importance_mean": 0.06284930833690987,
+        "importance_std": 0.0011903685587097762
+      },
+      {
+        "feature": "MAIN_FUEL",
+        "importance_mean": 0.06163236171187323,
+        "importance_std": 0.0023524761462962217
+      },
+      {
+        "feature": "MAINHEAT_DESCRIPTION",
+        "importance_mean": 0.03574890023205304,
+        "importance_std": 0.0023264081798708564
+      },
+      {
+        "feature": "HOTWATER_DESCRIPTION",
+        "importance_mean": 0.03368781606831488,
+        "importance_std": 0.0022881720714768563
+      },
+      {
+        "feature": "BUILT_FORM",
+        "importance_mean": 0.026619685098533408,
+        "importance_std": 0.0023156470889583213
+      },
+      {
+        "feature": "FLOOR_DESCRIPTION",
+        "importance_mean": 0.025559255842115512,
+        "importance_std": 0.001294344528415254
+      },
+      {
+        "feature": "FLAG_NO_LOFT_INSULATION",
+        "importance_mean": 0.019255978949303178,
+        "importance_std": 0.002387818021645085
+      },
+      {
+        "feature": "FLAG_SOLID_BRICK_BARE",
+        "importance_mean": 0.019004680729833544,
+        "importance_std": 0.0019792724380343647
+      },
+      {
+        "feature": "MAINHEATCONT_DESCRIPTION",
+        "importance_mean": 0.01856089020769014,
+        "importance_std": 0.002250235363957528
+      },
+      {
+        "feature": "ROOF_DESCRIPTION",
+        "importance_mean": 0.018517185549926273,
+        "importance_std": 0.00284958207016102
+      },
+      {
+        "feature": "WALLS_DESCRIPTION",
+        "importance_mean": 0.016827211890015393,
+        "importance_std": 0.0016615057381108738
+      },
+      {
+        "feature": "FLAG_GAS_BOILER",
+        "importance_mean": 0.015596255717101304,
+        "importance_std": 0.0008036071870423633
+      },
+      {
+        "feature": "SECONDHEAT_DESCRIPTION_IS_MISSING",
+        "importance_mean": 0.013070164980044518,
+        "importance_std": 0.0025564981465870705
+      },
+      {
+        "feature": "FLAG_HEAT_PUMP",
+        "importance_mean": 0.01055152162766484,
+        "importance_std": 0.0007474838182911108
+      },
+      {
+        "feature": "FLAG_ELECTRIC_HEATING",
+        "importance_mean": 0.010122869893649966,
+        "importance_std": 0.0020700948270128885
+      },
+      {
+        "feature": "PHOTO_SUPPLY",
+        "importance_mean": 0.009996109765461125,
+        "importance_std": 0.001563857108305767
+      },
+      {
+        "feature": "FLAG_CAVITY_INSULATED",
+        "importance_mean": 0.007956590750423386,
+        "importance_std": 0.0014250119422092398
+      },
+      {
+        "feature": "GLAZED_TYPE",
+        "importance_mean": 0.006884008938082431,
+        "importance_std": 0.0011769625270734887
+      },
+      {
+        "feature": "MECHANICAL_VENTILATION",
+        "importance_mean": 0.006035164324390174,
+        "importance_std": 0.001146730156984967
+      }
+    ]
+  },
+  "shap": {
+    "sample_n": 2000,
+    "n_features": 185,
+    "skipped": false,
+    "elapsed_seconds": 39.39649963378906,
+    "scope": "unified regressor (RdSAP path), SHAP values in SAP-score units"
+  }
+}

@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual envs
+.venv/
+.venv-tensorflow/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Office lock files (~$filename.docx etc.)
+~$*
+.~lock.*
+
+# Process logs (not deliverables)
+logs/
+reports/_*_log.txt
+
+# Editor backups
+*.bak
+
+# Backup deliverables (kept locally for rollback, not committed)
+reports/*.bak.docx
+notebooks/*.bak.ipynb
+presentation/*.bak.pptx
+
+# Graphify (isolated tool venv + generated knowledge graph)
+.graphify-venv/
+graphify-out/
+.graphify/
+
+# Friend's separate Liverpool subproject (reference only, not part of this repo)
+DataScience/
+
+# Redundant packaged bundle (regenerated on demand)
+Oxford_EPC_Project_for_tutor.zip
+
+# Claude / local tooling
+.claude/

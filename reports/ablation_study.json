@@ -1,0 +1,50 @@
+[
+  {
+    "label": "A. baseline (all OFF)",
+    "n_features": 61,
+    "acc": 0.6873914840843324,
+    "balanced_acc": 0.48668957091538223,
+    "macro_f1": 0.503499538071148,
+    "qwk": 0.7087418415314991
+  },
+  {
+    "label": "B. drop descriptions only",
+    "n_features": 52,
+    "acc": 0.6570483670938404,
+    "balanced_acc": 0.4313617066598715,
+    "macro_f1": 0.4436751804420521,
+    "qwk": 0.6512316218829062
+  },
+  {
+    "label": "C. drop methodology only",
+    "n_features": 59,
+    "acc": 0.6943365026870608,
+    "balanced_acc": 0.46155483415620047,
+    "macro_f1": 0.49745187660258566,
+    "qwk": 0.7036311905762598
+  },
+  {
+    "label": "D. add missingness only",
+    "n_features": 83,
+    "acc": 0.6883836295990079,
+    "balanced_acc": 0.4893211168076358,
+    "macro_f1": 0.5173309454266072,
+    "qwk": 0.70010951493537
+  },
+  {
+    "label": "E. desc + methodology",
+    "n_features": 50,
+    "acc": 0.6686233980983878,
+    "balanced_acc": 0.414972549624069,
+    "macro_f1": 0.4481358386243538,
+    "qwk": 0.6463522357405183
+  },
+  {
+    "label": "F. all improvements (matches above)",
+    "n_features": 71,
+    "acc": 0.6621744522529971,
+    "balanced_acc": 0.40997882051150986,
+    "macro_f1": 0.4383712463053646,
+    "qwk": 0.6390288086734
+  }
+]
