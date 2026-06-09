@@ -1,4 +1,4 @@
-# Oxford Domestic EPC — Energy-Rating Prediction & Retrofit Analysis
+# Oxford Domestic EPC: Energy-Rating Prediction and Retrofit Analysis
 
 Predicting the Energy Performance Certificate (EPC) band of Oxford's domestic
 housing stock from physical building fabric, identifying the drivers of energy
@@ -15,7 +15,7 @@ efficiency, and turning the findings into prioritised retrofit recommendations.
 Energy Performance Certificates rate dwellings from **A** (most efficient) to
 **G** (least). The rating is a deterministic discretisation of an underlying
 **SAP score** (1–100). This project learns that relationship from *physical
-fabric only* — walls, glazing, heating, age, floor area — while rigorously
+fabric only*, meaning walls, glazing, heating, age and floor area, while rigorously
 excluding the SAP-engine outputs that would otherwise leak the target.
 
 The result is a model that ranks dwellings for retrofit prioritisation across
@@ -29,7 +29,7 @@ On a strict post-2022 temporal hold-out (*n* = 12,095):
 | Metric | Value |
 | --- | --- |
 | Quadratic Weighted Kappa (primary) | **0.7696**  (0.7714 ± 0.0019 over 3 seeds) |
-| Within 15 SAP points | **97.7%** — exceeds the ONS Data Science Campus (2021) UK benchmark of 93% |
+| Within 15 SAP points | **97.7%** (exceeds the ONS Data Science Campus 2021 UK benchmark of 93%) |
 | Within 10 / 5 SAP points | 92.5% / 71.4% |
 | Score MAE | 4.04 SAP points (≈ the inter-assessor noise floor) |
 | MAE in band units | 0.32 (under a third of a band) |
@@ -118,7 +118,7 @@ DLUHC / MHCLG, filtered to local authority **E07000178 (Oxford)**. Non-address
 fields are released under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/);
 address-level fields fall under a restricted Ordnance Survey / Royal Mail
 licence and are excluded from the published dataset. Personal identifiers are
-removed in line with GDPR data-minimisation — see [`docs/data_card.md`](docs/data_card.md).
+removed in line with GDPR data-minimisation. See [`docs/data_card.md`](docs/data_card.md).
 
 ## Reproducibility
 
@@ -130,4 +130,4 @@ removed in line with GDPR data-minimisation — see [`docs/data_card.md`](docs/d
 
 ## Author
 
-**Parsec** — COM6003 Data Science, Buckinghamshire New University.
+**Parsec**, COM6003 Data Science, Buckinghamshire New University.
