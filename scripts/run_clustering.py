@@ -164,7 +164,7 @@ def main() -> int:
         axes[1].text(b.get_width() + 0.5, b.get_y() + b.get_height() / 2,
                      f"{p['modal_band']} (n={p['n']:,})", va="center", fontsize=8)
     axes[1].set_xlim(0, max(p["mean_sap"] for p in profiles) * 1.25)
-    fig.suptitle(f"Oxford housing segmentation — K-Prototypes, k={k}", y=1.02)
+    fig.suptitle(f"Oxford housing segmentation, K-Prototypes, k={k}", y=1.02)
     fig.tight_layout()
     FIG.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG, dpi=300, bbox_inches="tight")

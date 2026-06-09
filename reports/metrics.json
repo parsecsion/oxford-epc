@@ -157,16 +157,14 @@
   },
   "walls_sap_gap_top_vs_bottom": 25.0,
   "diagnostic": {
-    "spearman_age_sap": 0.6182777562218816,
-    "spearman_glaze_sap": 0.20906075528412046,
-    "spearman_loft_sap": -0.12778151385351638,
+    "spearman_age_sap": 0.618,
+    "spearman_age_sap_p": 0.0,
+    "spearman_glaze_sap": 0.209,
     "cramers_v": {
-      "walls": 0.40745222691001326,
-      "main_fuel": 0.3181938489869221,
-      "age_band": 0.3658675074135159,
-      "built_form": 0.09051391372577852,
-      "roof": 0.37568335086490345,
-      "floor": 0.3441619239725989
+      "walls": 0.407,
+      "age_band": 0.366,
+      "main_fuel": 0.318,
+      "built_form": 0.091
     }
   },
   "n_train": 37347,

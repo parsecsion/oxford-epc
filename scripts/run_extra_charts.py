@@ -85,7 +85,7 @@ def main() -> int:
     ax.text(mean_sap + 1, ymax * 0.62, f"mean = {mean_sap:.0f}",
             fontsize=8.5, rotation=90, va="center")
     ax.set_xlim(0, 105)
-    ax.set_title("Distribution of SAP score with statutory EPC bands — Oxford")
+    ax.set_title("Distribution of SAP score with statutory EPC bands, Oxford")
     ax.set_xlabel("SAP score (CURRENT_ENERGY_EFFICIENCY)"); ax.set_ylabel("Number of dwellings")
     _save(fig, "fig_sap_histogram.png")
 
@@ -115,7 +115,7 @@ def main() -> int:
                    relative_scaling=0.5).generate_from_frequencies(freq)
     fig, ax = plt.subplots(figsize=(9, 4.4))
     ax.imshow(wc, interpolation="bilinear"); ax.axis("off")
-    ax.set_title("Most-recommended retrofit measures (font size = frequency) — Oxford")
+    ax.set_title("Most-recommended retrofit measures (font size = frequency), Oxford")
     _save(fig, "fig_measure_wordcloud.png")
 
     # 4) donut: EPC band share, percentages in a legend ------------------------
@@ -138,7 +138,7 @@ def main() -> int:
     ax.legend(wedges, [f"{b} — {p:.1f}%" for b, p in zip(RATING_ORDER, pct.values)],
               title="Band", loc="center left", bbox_to_anchor=(1.0, 0.5),
               frameon=False, fontsize=9)
-    ax.set_title("EPC band share — Oxford")
+    ax.set_title("EPC band share, Oxford")
     _save(fig, "fig_band_donut.png")
 
     # 5) treemap: type x built form, colour = mean SAP (a metric, not rainbow) --
@@ -158,7 +158,7 @@ def main() -> int:
     ax.axis("off")
     sm = cm.ScalarMappable(norm=norm, cmap=cmap); sm.set_array([])
     cb = fig.colorbar(sm, ax=ax, shrink=0.7, pad=0.01); cb.set_label("Mean SAP score")
-    ax.set_title("Housing stock by property type × built form, shaded by mean SAP — Oxford")
+    ax.set_title("Housing stock by property type and built form, shaded by mean SAP, Oxford")
     _save(fig, "fig_treemap.png")
 
     # 6) stacked area: lodgements per year by band (to last complete year) -----
@@ -171,7 +171,7 @@ def main() -> int:
                  labels=RATING_ORDER, colors=band_palette, alpha=0.9)
     ax.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=10))
     ax.set_xlim(2008, last_full)
-    ax.set_title(f"EPC lodgements per year, by band (2008–{last_full}) — Oxford")
+    ax.set_title(f"EPC lodgements per year, by band (2008 to {last_full}), Oxford")
     ax.set_xlabel("Inspection year"); ax.set_ylabel("Lodgements")
     ax.legend(title="Band", bbox_to_anchor=(1.02, 1), loc="upper left", fontsize=8)
     _save(fig, "fig_stacked_area.png")
@@ -192,7 +192,7 @@ def main() -> int:
                    s=area[m], c=[type_colors[t]], alpha=0.55,
                    edgecolors="white", linewidths=0.3, label=t)
     ax.set_xlabel("Total floor area (m$^2$)"); ax.set_ylabel("SAP score")
-    ax.set_title("Floor area vs SAP — bubble size = CO$_2$ emissions, colour = property type")
+    ax.set_title("Floor area vs SAP, bubble size = CO$_2$ emissions, colour = property type")
     type_leg = ax.legend(title="Property type", loc="lower right", fontsize=8, framealpha=0.9)
     ax.add_artist(type_leg)
     # explicit CO2 size legend (reference bubbles, area-scaled to match)

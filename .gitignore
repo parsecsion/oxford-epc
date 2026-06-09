@@ -47,5 +47,12 @@ DataScience/
 # Redundant packaged bundle (regenerated on demand)
 Oxford_EPC_Project_for_tutor.zip
 
+# Unrelated coursework / local-only artefacts (never publish)
+reports/CW1_Report_KnowledgeBasedSystems_*.docx
+reports/_figures_bak/
+reports/_docxbuild/
+reports/_ref_unpacked/
+reports/_build_assets/
+
 # Claude / local tooling
 .claude/

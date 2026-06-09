@@ -31,7 +31,7 @@ def fig_rating_distribution(df: pd.DataFrame, out: Path) -> None:
     ax.bar(counts.index, counts.values, color=sns.color_palette("RdYlGn_r", len(RATING_ORDER)))
     ax.set_xlabel("EPC band")
     ax.set_ylabel("Number of certificates")
-    ax.set_title("Distribution of current energy rating — Oxford")
+    ax.set_title("Distribution of current energy rating, Oxford")
     for i, v in enumerate(counts.values):
         ax.text(i, v, f"{int(v):,}", ha="center", va="bottom", fontsize=8)
     _save(fig, out)
@@ -63,7 +63,7 @@ def fig_rating_by_age(df: pd.DataFrame, out: Path) -> None:
     ax.set_xticklabels([s.replace("England and Wales: ", "") for s in ct.index],
                        rotation=30, ha="right")
     ax.set_ylabel("Share within age band")
-    ax.set_title("Rating composition by construction age band — Oxford")
+    ax.set_title("Rating composition by construction age band, Oxford")
     ax.legend(title="Band", bbox_to_anchor=(1.02, 1), loc="upper left", fontsize=8)
     _save(fig, out)
 
@@ -106,7 +106,7 @@ def fig_confusion(cm: np.ndarray, out: Path) -> None:
                 cbar_kws={"label": "n"})
     ax.set_xlabel("Predicted band")
     ax.set_ylabel("True band")
-    ax.set_title("Confusion matrix — hold-out test set")
+    ax.set_title("Confusion matrix, hold-out test set")
     _save(fig, out)
 
 
@@ -136,14 +136,14 @@ def fig_calibration(mean_pred: np.ndarray, obs_freq: np.ndarray,
                 label=f"+ isotonic (Brier={b2:.3f})")
     ax.set_xlabel("Mean predicted probability")
     ax.set_ylabel("Observed frequency")
-    ax.set_title(f"Reliability curve — {label}")
+    ax.set_title(f"Reliability curve, {label}")
     ax.legend(loc="upper left", fontsize=9)
     _save(fig, out)
 
 
 def fig_fairness(fair: pd.DataFrame, out: Path,
                  metric_col: str = "qwk") -> None:
-    """Horizontal bar chart of per-segment metrics — separate panel per segment."""
+    """Horizontal bar chart of per-segment metrics, separate panel per segment."""
     if fair.empty:
         fig, ax = plt.subplots(figsize=(6, 1.5))
         ax.text(0.5, 0.5, "No fairness segments above the support floor.",
@@ -164,7 +164,7 @@ def fig_fairness(fair: pd.DataFrame, out: Path,
         ax.barh(sub["value"].astype(str), sub[metric_col], color=colors)
         ax.set_xlim(min(-0.1, sub[metric_col].min() - 0.05), 1.0)
         ax.axvline(0, color="grey", lw=0.5)
-        ax.set_title(f"{seg} — {metric_col.upper()} per segment", loc="left", fontsize=11)
+        ax.set_title(f"{seg}: {metric_col.upper()} per segment", loc="left", fontsize=11)
         for i, (v, n) in enumerate(zip(sub[metric_col].values, sub["n"].values)):
             ax.text(v + 0.01, i, f"{v:.2f}  (n={n:,})", va="center", fontsize=8)
     _save(fig, out)
@@ -181,7 +181,7 @@ def fig_top_recommendations(rec_summary: pd.DataFrame, out: Path,
     fig, ax = plt.subplots(figsize=(8.5, 0.45 * len(s) + 1.2))
     bars = ax.barh(s["measure"].astype(str), s["count"], color="#3b6cb7")
     ax.set_xlabel("Number of Oxford EPCs recommending this measure")
-    ax.set_title(f"Top {top} retrofit measures recommended by the SAP engine — Oxford")
+    ax.set_title(f"Top {top} retrofit measures recommended by the SAP engine, Oxford")
     for bar, v, cost in zip(bars, s["count"], s["cost_mid_mean"]):
         cost_lbl = f"≈ £{int(cost):,}" if pd.notna(cost) and cost > 0 else "n/a"
         ax.text(v + max(s["count"]) * 0.01, bar.get_y() + bar.get_height() / 2,

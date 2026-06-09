@@ -106,7 +106,7 @@ def main() -> int:
     ax.set_xticks(range(len(trend))); ax.set_xticklabels(trend.index, rotation=25, ha="right")
     ax.set_ylabel("Mean SAP score")
     ax.set_xlabel("Construction era")
-    ax.set_title("Energy-efficiency trend by construction era and property type — Oxford")
+    ax.set_title("Energy-efficiency trend by construction era and property type, Oxford")
     ax.legend(title="Property type", fontsize=8)
     ax.grid(alpha=0.3)
     fig.tight_layout()

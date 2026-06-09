@@ -92,7 +92,7 @@ def score_reliability_curve(score_true: np.ndarray, score_pred: np.ndarray,
                 color="#555")
     ax.set_xlabel("Mean predicted SAP score (per decile)")
     ax.set_ylabel("Mean observed SAP score (per decile)")
-    ax.set_title("SAP-score reliability curve — hold-out test set")
+    ax.set_title("SAP-score reliability curve, hold-out test set")
     ax.legend(loc="upper left", fontsize=9)
     fig.tight_layout()
     fig.savefig(out_path, dpi=300, bbox_inches="tight")
