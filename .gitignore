@@ -56,3 +56,6 @@ reports/_build_assets/
 
 # Claude / local tooling
 .claude/
+
+# Word temp lock files
+~WRL*.tmp
